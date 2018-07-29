@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		593B4EE9210CDA1700F3A464 /* UpcomingViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B4EE8210CDA1700F3A464 /* UpcomingViewControllerExt.swift */; };
+		595300B820ED24E80057C29C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595300B720ED24E80057C29C /* AppDelegate.swift */; };
+		595300BA20ED24E80057C29C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595300B920ED24E80057C29C /* HomeController.swift */; };
+		595300BD20ED24E80057C29C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595300BB20ED24E80057C29C /* Main.storyboard */; };
+		595300BF20ED24EE0057C29C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 595300BE20ED24EE0057C29C /* Assets.xcassets */; };
+		595300C220ED24EE0057C29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595300C020ED24EE0057C29C /* LaunchScreen.storyboard */; };
+		595300CD20ED24EF0057C29C /* eventsByKrissyTshirtsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595300CC20ED24EF0057C29C /* eventsByKrissyTshirtsTests.swift */; };
+		595300D820ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595300D720ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift */; };
+		59B9FFC720F284EC000FF8AC /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9FFC620F284EC000FF8AC /* UpcomingViewController.swift */; };
+		59B9FFC920F28511000FF8AC /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9FFC820F28511000FF8AC /* AccountViewController.swift */; };
+		59B9FFCB20F28A30000FF8AC /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9FFCA20F28A30000FF8AC /* HomeTabBarController.swift */; };
+		59B9FFCD20F29B24000FF8AC /* UpComingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9FFCC20F29B24000FF8AC /* UpComingCell.swift */; };
+		59B9FFCF20F29B75000FF8AC /* ShoppingCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9FFCE20F29B75000FF8AC /* ShoppingCartCell.swift */; };
+		59B9FFD120F2CE78000FF8AC /* UpComingDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9FFD020F2CE78000FF8AC /* UpComingDetailVC.swift */; };
+		59B9FFD320F2CED5000FF8AC /* HomeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9FFD220F2CED5000FF8AC /* HomeDetailVC.swift */; };
+		59B9FFD520F2CF08000FF8AC /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9FFD420F2CF08000FF8AC /* PaymentVC.swift */; };
+		59C46EC820EF982200B8DDE2 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C46EC720EF982200B8DDE2 /* HomeCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		595300C920ED24EF0057C29C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 595300AC20ED24E80057C29C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 595300B320ED24E80057C29C;
+			remoteInfo = eventsByKrissyTshirts;
+		};
+		595300D420ED24EF0057C29C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 595300AC20ED24E80057C29C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 595300B320ED24E80057C29C;
+			remoteInfo = eventsByKrissyTshirts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		593B4EE8210CDA1700F3A464 /* UpcomingViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewControllerExt.swift; sourceTree = "<group>"; };
+		595300B420ED24E80057C29C /* eventsByKrissyTshirts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eventsByKrissyTshirts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		595300B720ED24E80057C29C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		595300B920ED24E80057C29C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		595300BC20ED24E80057C29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		595300BE20ED24EE0057C29C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		595300C120ED24EE0057C29C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		595300C320ED24EE0057C29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		595300C820ED24EF0057C29C /* eventsByKrissyTshirtsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eventsByKrissyTshirtsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		595300CC20ED24EF0057C29C /* eventsByKrissyTshirtsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsByKrissyTshirtsTests.swift; sourceTree = "<group>"; };
+		595300CE20ED24EF0057C29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		595300D320ED24EF0057C29C /* eventsByKrissyTshirtsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eventsByKrissyTshirtsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		595300D720ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsByKrissyTshirtsUITests.swift; sourceTree = "<group>"; };
+		595300D920ED24EF0057C29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59B9FFC620F284EC000FF8AC /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		59B9FFC820F28511000FF8AC /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		59B9FFCA20F28A30000FF8AC /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		59B9FFCC20F29B24000FF8AC /* UpComingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingCell.swift; sourceTree = "<group>"; };
+		59B9FFCE20F29B75000FF8AC /* ShoppingCartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartCell.swift; sourceTree = "<group>"; };
+		59B9FFD020F2CE78000FF8AC /* UpComingDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingDetailVC.swift; sourceTree = "<group>"; };
+		59B9FFD220F2CED5000FF8AC /* HomeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailVC.swift; sourceTree = "<group>"; };
+		59B9FFD420F2CF08000FF8AC /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
+		59C46EC720EF982200B8DDE2 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		595300B120ED24E80057C29C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595300C520ED24EF0057C29C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595300D020ED24EF0057C29C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		593B4EE7210CD9EB00F3A464 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				593B4EE8210CDA1700F3A464 /* UpcomingViewControllerExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		595300AB20ED24E80057C29C = {
+			isa = PBXGroup;
+			children = (
+				595300B620ED24E80057C29C /* eventsByKrissyTshirts */,
+				595300CB20ED24EF0057C29C /* eventsByKrissyTshirtsTests */,
+				595300D620ED24EF0057C29C /* eventsByKrissyTshirtsUITests */,
+				595300B520ED24E80057C29C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		595300B520ED24E80057C29C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				595300B420ED24E80057C29C /* eventsByKrissyTshirts.app */,
+				595300C820ED24EF0057C29C /* eventsByKrissyTshirtsTests.xctest */,
+				595300D320ED24EF0057C29C /* eventsByKrissyTshirtsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		595300B620ED24E80057C29C /* eventsByKrissyTshirts */ = {
+			isa = PBXGroup;
+			children = (
+				593B4EE7210CD9EB00F3A464 /* Extensions */,
+				59D0F8D820EF979B003BD21F /* Controller */,
+				59D0F8D720EF9792003BD21F /* Model */,
+				59D0F8D620EF9772003BD21F /* View */,
+				595300B720ED24E80057C29C /* AppDelegate.swift */,
+				595300BB20ED24E80057C29C /* Main.storyboard */,
+				595300BE20ED24EE0057C29C /* Assets.xcassets */,
+				595300C020ED24EE0057C29C /* LaunchScreen.storyboard */,
+				595300C320ED24EE0057C29C /* Info.plist */,
+			);
+			path = eventsByKrissyTshirts;
+			sourceTree = "<group>";
+		};
+		595300CB20ED24EF0057C29C /* eventsByKrissyTshirtsTests */ = {
+			isa = PBXGroup;
+			children = (
+				595300CC20ED24EF0057C29C /* eventsByKrissyTshirtsTests.swift */,
+				595300CE20ED24EF0057C29C /* Info.plist */,
+			);
+			path = eventsByKrissyTshirtsTests;
+			sourceTree = "<group>";
+		};
+		595300D620ED24EF0057C29C /* eventsByKrissyTshirtsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				595300D720ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift */,
+				595300D920ED24EF0057C29C /* Info.plist */,
+			);
+			path = eventsByKrissyTshirtsUITests;
+			sourceTree = "<group>";
+		};
+		59D0F8D620EF9772003BD21F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59C46EC720EF982200B8DDE2 /* HomeCell.swift */,
+				59B9FFCC20F29B24000FF8AC /* UpComingCell.swift */,
+				59B9FFCE20F29B75000FF8AC /* ShoppingCartCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		59D0F8D720EF9792003BD21F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		59D0F8D820EF979B003BD21F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				59B9FFC620F284EC000FF8AC /* UpcomingViewController.swift */,
+				59B9FFD020F2CE78000FF8AC /* UpComingDetailVC.swift */,
+				595300B920ED24E80057C29C /* HomeController.swift */,
+				59B9FFD220F2CED5000FF8AC /* HomeDetailVC.swift */,
+				59B9FFC820F28511000FF8AC /* AccountViewController.swift */,
+				59B9FFD420F2CF08000FF8AC /* PaymentVC.swift */,
+				59B9FFCA20F28A30000FF8AC /* HomeTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		595300B320ED24E80057C29C /* eventsByKrissyTshirts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 595300DC20ED24EF0057C29C /* Build configuration list for PBXNativeTarget "eventsByKrissyTshirts" */;
+			buildPhases = (
+				595300B020ED24E80057C29C /* Sources */,
+				595300B120ED24E80057C29C /* Frameworks */,
+				595300B220ED24E80057C29C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eventsByKrissyTshirts;
+			productName = eventsByKrissyTshirts;
+			productReference = 595300B420ED24E80057C29C /* eventsByKrissyTshirts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		595300C720ED24EF0057C29C /* eventsByKrissyTshirtsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 595300DF20ED24EF0057C29C /* Build configuration list for PBXNativeTarget "eventsByKrissyTshirtsTests" */;
+			buildPhases = (
+				595300C420ED24EF0057C29C /* Sources */,
+				595300C520ED24EF0057C29C /* Frameworks */,
+				595300C620ED24EF0057C29C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				595300CA20ED24EF0057C29C /* PBXTargetDependency */,
+			);
+			name = eventsByKrissyTshirtsTests;
+			productName = eventsByKrissyTshirtsTests;
+			productReference = 595300C820ED24EF0057C29C /* eventsByKrissyTshirtsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		595300D220ED24EF0057C29C /* eventsByKrissyTshirtsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 595300E220ED24EF0057C29C /* Build configuration list for PBXNativeTarget "eventsByKrissyTshirtsUITests" */;
+			buildPhases = (
+				595300CF20ED24EF0057C29C /* Sources */,
+				595300D020ED24EF0057C29C /* Frameworks */,
+				595300D120ED24EF0057C29C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				595300D520ED24EF0057C29C /* PBXTargetDependency */,
+			);
+			name = eventsByKrissyTshirtsUITests;
+			productName = eventsByKrissyTshirtsUITests;
+			productReference = 595300D320ED24EF0057C29C /* eventsByKrissyTshirtsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		595300AC20ED24E80057C29C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = nic;
+				TargetAttributes = {
+					595300B320ED24E80057C29C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					595300C720ED24EF0057C29C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 595300B320ED24E80057C29C;
+					};
+					595300D220ED24EF0057C29C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 595300B320ED24E80057C29C;
+					};
+				};
+			};
+			buildConfigurationList = 595300AF20ED24E80057C29C /* Build configuration list for PBXProject "eventsByKrissyTshirts" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 595300AB20ED24E80057C29C;
+			productRefGroup = 595300B520ED24E80057C29C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				595300B320ED24E80057C29C /* eventsByKrissyTshirts */,
+				595300C720ED24EF0057C29C /* eventsByKrissyTshirtsTests */,
+				595300D220ED24EF0057C29C /* eventsByKrissyTshirtsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		595300B220ED24E80057C29C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595300C220ED24EE0057C29C /* LaunchScreen.storyboard in Resources */,
+				595300BF20ED24EE0057C29C /* Assets.xcassets in Resources */,
+				595300BD20ED24E80057C29C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595300C620ED24EF0057C29C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595300D120ED24EF0057C29C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		595300B020ED24E80057C29C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				593B4EE9210CDA1700F3A464 /* UpcomingViewControllerExt.swift in Sources */,
+				59B9FFD320F2CED5000FF8AC /* HomeDetailVC.swift in Sources */,
+				59B9FFC720F284EC000FF8AC /* UpcomingViewController.swift in Sources */,
+				595300BA20ED24E80057C29C /* HomeController.swift in Sources */,
+				59B9FFCB20F28A30000FF8AC /* HomeTabBarController.swift in Sources */,
+				59B9FFCF20F29B75000FF8AC /* ShoppingCartCell.swift in Sources */,
+				59C46EC820EF982200B8DDE2 /* HomeCell.swift in Sources */,
+				59B9FFCD20F29B24000FF8AC /* UpComingCell.swift in Sources */,
+				59B9FFD120F2CE78000FF8AC /* UpComingDetailVC.swift in Sources */,
+				595300B820ED24E80057C29C /* AppDelegate.swift in Sources */,
+				59B9FFD520F2CF08000FF8AC /* PaymentVC.swift in Sources */,
+				59B9FFC920F28511000FF8AC /* AccountViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595300C420ED24EF0057C29C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595300CD20ED24EF0057C29C /* eventsByKrissyTshirtsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595300CF20ED24EF0057C29C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595300D820ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		595300CA20ED24EF0057C29C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 595300B320ED24E80057C29C /* eventsByKrissyTshirts */;
+			targetProxy = 595300C920ED24EF0057C29C /* PBXContainerItemProxy */;
+		};
+		595300D520ED24EF0057C29C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 595300B320ED24E80057C29C /* eventsByKrissyTshirts */;
+			targetProxy = 595300D420ED24EF0057C29C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		595300BB20ED24E80057C29C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				595300BC20ED24E80057C29C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		595300C020ED24EE0057C29C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				595300C120ED24EE0057C29C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		595300DA20ED24EF0057C29C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		595300DB20ED24EF0057C29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		595300DD20ED24EF0057C29C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAC33BRLLD;
+				INFOPLIST_FILE = eventsByKrissyTshirts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nicksdev.eventsByKrissyTshirts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		595300DE20ED24EF0057C29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAC33BRLLD;
+				INFOPLIST_FILE = eventsByKrissyTshirts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nicksdev.eventsByKrissyTshirts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		595300E020ED24EF0057C29C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAC33BRLLD;
+				INFOPLIST_FILE = eventsByKrissyTshirtsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nicksdev.eventsByKrissyTshirtsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eventsByKrissyTshirts.app/eventsByKrissyTshirts";
+			};
+			name = Debug;
+		};
+		595300E120ED24EF0057C29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAC33BRLLD;
+				INFOPLIST_FILE = eventsByKrissyTshirtsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nicksdev.eventsByKrissyTshirtsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eventsByKrissyTshirts.app/eventsByKrissyTshirts";
+			};
+			name = Release;
+		};
+		595300E320ED24EF0057C29C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAC33BRLLD;
+				INFOPLIST_FILE = eventsByKrissyTshirtsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nicksdev.eventsByKrissyTshirtsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eventsByKrissyTshirts;
+			};
+			name = Debug;
+		};
+		595300E420ED24EF0057C29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GAC33BRLLD;
+				INFOPLIST_FILE = eventsByKrissyTshirtsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nicksdev.eventsByKrissyTshirtsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eventsByKrissyTshirts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		595300AF20ED24E80057C29C /* Build configuration list for PBXProject "eventsByKrissyTshirts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595300DA20ED24EF0057C29C /* Debug */,
+				595300DB20ED24EF0057C29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		595300DC20ED24EF0057C29C /* Build configuration list for PBXNativeTarget "eventsByKrissyTshirts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595300DD20ED24EF0057C29C /* Debug */,
+				595300DE20ED24EF0057C29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		595300DF20ED24EF0057C29C /* Build configuration list for PBXNativeTarget "eventsByKrissyTshirtsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595300E020ED24EF0057C29C /* Debug */,
+				595300E120ED24EF0057C29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		595300E220ED24EF0057C29C /* Build configuration list for PBXNativeTarget "eventsByKrissyTshirtsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595300E320ED24EF0057C29C /* Debug */,
+				595300E420ED24EF0057C29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 595300AC20ED24E80057C29C /* Project object */;
+}
