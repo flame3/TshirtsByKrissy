@@ -38,7 +38,7 @@ class HomeTabBarController: UITabBarController {
         /*  Account tab   */
         let accountVC = AccountViewController()
         let accountNavController = UINavigationController(rootViewController: accountVC)
-        accountNavController.title = "Shopping-cart"
+        accountNavController.title = "Account"
         accountNavController.navigationBar.tintColor = .gray
         accountNavController.tabBarItem.image = UIImage(named: "user")
         
