@@ -17,12 +17,13 @@ class UpcomingViewController: UICollectionViewController  {
     }()
     
     let cellID = "cellID"
-    let navUpComingNavController = UINavigationController(rootViewController: UpComingDetailVC())
+    let navUpComingNavController = UINavigationController(rootViewController: DetailViewController())
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupNavBar()
+        
         
 
         collectionView?.backgroundColor = .white

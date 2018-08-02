@@ -13,6 +13,8 @@ class PaymentVC: UIViewController {
         super.viewDidLoad()
         
         
+        view.backgroundColor = .white
+        
     }
     
     

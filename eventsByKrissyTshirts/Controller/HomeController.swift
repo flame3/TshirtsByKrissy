@@ -94,7 +94,8 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.item)
-        let controller = HomeDetailVC()
+        let layout = UICollectionViewFlowLayout()
+        let controller = DetailViewController(collectionViewLayout: layout)
         navigationController?.pushViewController(controller, animated: true)
     }
     
