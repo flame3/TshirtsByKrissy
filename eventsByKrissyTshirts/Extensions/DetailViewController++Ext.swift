@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension DetailViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+extension DetailVC: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

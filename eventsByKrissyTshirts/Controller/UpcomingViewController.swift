@@ -17,7 +17,7 @@ class UpcomingViewController: UICollectionViewController  {
     }()
     
     let cellID = "cellID"
-    let navUpComingNavController = UINavigationController(rootViewController: DetailViewController())
+    let navUpComingNavController = UINavigationController(rootViewController: DetailVC())
     
     override func viewDidLoad() {
         super.viewDidLoad()

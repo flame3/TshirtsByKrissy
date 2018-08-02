@@ -30,7 +30,7 @@ extension UpcomingViewController: UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let layout = UICollectionViewFlowLayout()
-        let upComingDetail = DetailViewController(collectionViewLayout: layout)
+        let upComingDetail = DetailVC(collectionViewLayout: layout)
         navigationController?.pushViewController(upComingDetail, animated: true)
         
         

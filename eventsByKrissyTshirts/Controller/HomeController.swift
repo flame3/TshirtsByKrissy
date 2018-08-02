@@ -47,19 +47,6 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         collectionView?.translatesAutoresizingMaskIntoConstraints = false
         
         
-                    /*
-         
-         everything is commented out due to trying to get the cells to layout vertically
-         maybe i need to just watch the tutorial again.
-         
-         Looking to make the app like snkr grid but with a horizongtal scroll. not having any luck
-         
-         
-         want to have a tabbed bar controller at the bottom as well
-         
-         want to have a 
-         */
-        
         
         
         setupCollectionView()
@@ -95,7 +82,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.item)
         let layout = UICollectionViewFlowLayout()
-        let controller = DetailViewController(collectionViewLayout: layout)
+        let controller = DetailVC(collectionViewLayout: layout)
         navigationController?.pushViewController(controller, animated: true)
     }
     

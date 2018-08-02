@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UICollectionViewController {
+class DetailVC: UICollectionViewController {
     
     let topImageView: UIImageView = {
         let iv = UIImageView()
@@ -96,7 +96,7 @@ class DetailViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // - Mark ViewDidLoad
+        //- Mark ViewDidLoad
         
         
         
@@ -203,7 +203,7 @@ class DetailViewController: UICollectionViewController {
     
     
     fileprivate func setupElements(){
-        // - Mark Adding Elements to View
+        //- Mark Adding Elements to View
         view.addSubview(topImageView)
         view.addSubview(differentColorContainerView)
             differentColorContainerView.addSubview(blueShirtImageButton)
@@ -216,7 +216,7 @@ class DetailViewController: UICollectionViewController {
     
     
     fileprivate func setupViews() {
-       // - Mark Constaints
+       //- Mark Constaints
         
         // setup Top Image View
         topImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
