@@ -11,11 +11,21 @@ import UIKit
 
 extension AccountViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return (sectionData[section]?.count)!
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+       
+        return sectionsHeader[section]
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sectionsHeader.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! AccountTableCell
+        cell.cellLabel.text = sectionData[indexPath.section]?[indexPath.row]
         return cell
     }
     

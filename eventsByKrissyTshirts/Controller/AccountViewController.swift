@@ -31,9 +31,16 @@ class AccountViewController: UIViewController {
         tbv.translatesAutoresizingMaskIntoConstraints = false
         return tbv
     }()
-
+    
+    let sectionsHeader: [String] = ["Settings","Billing"]
+    let s1Data: [String] = ["Row1", "Row2", "Row3", "Row4"]
+    let s2Data: [String] = ["Row5", "Row6", "Row7", "Row8"]
+    var sectionData: [Int: [String]] = [:]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         
         navigationItem.title = "Account"
         navigationItem.rightBarButtonItem = rightShoppingCartButton
@@ -41,6 +48,8 @@ class AccountViewController: UIViewController {
 
         accountDetailsTableView.delegate = self
         accountDetailsTableView.dataSource = self
+        
+        sectionData = [0: s1Data, 1: s2Data]
         
         addViews()
         setupElements()
@@ -67,6 +76,7 @@ class AccountViewController: UIViewController {
         accountDetailsTableView.leftAnchor.constraint(equalTo: profileImage.leftAnchor).isActive = true
         accountDetailsTableView.rightAnchor.constraint(equalTo: profileImage.rightAnchor).isActive = true
         accountDetailsTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        
         
         
         
