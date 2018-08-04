@@ -9,7 +9,7 @@
 import UIKit
 
 
-extension AccountViewController: UITableViewDelegate, UITableViewDataSource {
+extension AccountVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (sectionData[section]?.count)!
     }

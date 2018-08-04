@@ -96,9 +96,7 @@ class DetailVC: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //- Mark ViewDidLoad
-        
-        
+        // MARK: - ViewDidLoad
         
         sizePickerView.dataSource = self
         sizePickerView.delegate = self
@@ -203,7 +201,7 @@ class DetailVC: UICollectionViewController {
     
     
     fileprivate func setupElements(){
-        //- Mark Adding Elements to View
+        // MARK: - Adding Subviews
         view.addSubview(topImageView)
         view.addSubview(differentColorContainerView)
             differentColorContainerView.addSubview(blueShirtImageButton)
@@ -216,7 +214,7 @@ class DetailVC: UICollectionViewController {
     
     
     fileprivate func setupViews() {
-       //- Mark Constaints
+       // MARK: - Constraints
         
         // setup Top Image View
         topImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true

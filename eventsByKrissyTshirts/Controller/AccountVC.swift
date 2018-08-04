@@ -9,7 +9,7 @@
 import UIKit
 
 let cellID = "cellID"
-class AccountViewController: UIViewController {
+class AccountVC: UIViewController {
  
     
     let rightShoppingCartButton: UIBarButtonItem = {

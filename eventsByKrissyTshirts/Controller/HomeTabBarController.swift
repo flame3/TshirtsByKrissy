@@ -35,10 +35,10 @@ class HomeTabBarController: UITabBarController {
         homeNavController.navigationBar.tintColor = .gray
         homeNavController.tabBarItem.image = UIImage(named: "home")
         
-        /*  Account tab   */
-        let accountVC = AccountViewController()
-        let accountNavController = UINavigationController(rootViewController: accountVC)
-        accountNavController.title = "Account"
+        /*  About tab   */
+        let aboutVC = AboutViewController()
+        let accountNavController = UINavigationController(rootViewController: aboutVC)
+        accountNavController.title = "About"
         accountNavController.navigationBar.tintColor = .gray
         accountNavController.tabBarItem.image = UIImage(named: "user")
         
