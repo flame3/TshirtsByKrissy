@@ -11,12 +11,15 @@ import UIKit
 class  AccountTableCell: UITableViewCell {
     let cellLabel: UILabel = {
         let lbl = UILabel()
+        lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
     
     let arrowImg: UIImageView = {
-        let arrow = UIImageView(image: UIImage(named: "arrow"))
+        let arrow = UIImageView(image: UIImage(named: "next"))
+        arrow.clipsToBounds = true
         arrow.contentMode = .scaleAspectFit
+        arrow.translatesAutoresizingMaskIntoConstraints = false
         return arrow
     }()
     
@@ -27,6 +30,8 @@ class  AccountTableCell: UITableViewCell {
         layer.shadowColor = UIColor.darkGray.cgColor
         layer.shadowOpacity = 1
        
+        self.addSubview(cellLabel)
+        self.addSubview(arrowImg)
         setupViews()
         
         
@@ -35,13 +40,16 @@ class  AccountTableCell: UITableViewCell {
     fileprivate func setupViews(){
         cellLabel.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         cellLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        cellLabel.heightAnchor.constraint(equalToConstant: self.frame.height/3)
+        cellLabel.heightAnchor.constraint(equalToConstant: 50)
         cellLabel.widthAnchor.constraint(equalToConstant: 50)
         
         arrowImg.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        arrowImg.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-        arrowImg.heightAnchor.constraint(equalToConstant: self.frame.height/3)
-        arrowImg.widthAnchor.constraint(equalToConstant: 50)
+        arrowImg.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        arrowImg.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        //arrowImg.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        //arrowImg.leftAnchor.constraint(equalTo: cellLabel.rightAnchor, constant: 50).isActive = true
+        arrowImg.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        arrowImg.widthAnchor.constraint(equalToConstant: 50).isActive = true
         
         
         

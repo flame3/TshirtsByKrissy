@@ -69,13 +69,13 @@ class AccountViewController: UIViewController {
         profileImage.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         profileImage.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         profileImage.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        profileImage.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        profileImage.heightAnchor.constraint(equalToConstant: (view.frame.height/2)-10).isActive = true
         
         
-        accountDetailsTableView.topAnchor.constraint(equalTo: profileImage.bottomAnchor).isActive = true
+        accountDetailsTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 2).isActive = true
         accountDetailsTableView.leftAnchor.constraint(equalTo: profileImage.leftAnchor).isActive = true
         accountDetailsTableView.rightAnchor.constraint(equalTo: profileImage.rightAnchor).isActive = true
-        accountDetailsTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        accountDetailsTableView.heightAnchor.constraint(equalToConstant: (view.frame.height/2)-10).isActive = true
         
         
         
