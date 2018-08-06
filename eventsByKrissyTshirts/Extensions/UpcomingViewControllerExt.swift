@@ -15,11 +15,13 @@ extension UpcomingViewController: UICollectionViewDelegateFlowLayout {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! UpComingCell
         cell.layer.cornerRadius = 10
         
+        cell.tshirts = Tshirts[indexPath.item]
+        
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return Tshirts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -31,6 +33,9 @@ extension UpcomingViewController: UICollectionViewDelegateFlowLayout {
         
         let layout = UICollectionViewFlowLayout()
         let upComingDetail = DetailVC(collectionViewLayout: layout)
+        let upcomingImage = UIImage(named: Tshirts[indexPath.row].mainImage)
+        upComingDetail.topImageView.image = upcomingImage
+        //upComingDetail.
         navigationController?.pushViewController(upComingDetail, animated: true)
         
         

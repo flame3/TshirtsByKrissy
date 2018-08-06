@@ -10,15 +10,16 @@ import UIKit
 
 class DetailVC: UICollectionViewController {
     
-    let topImageView: UIImageView = {
+    var topImageView: UIImageView = {
         let iv = UIImageView()
         iv.image = UIImage(named: "placeholder")
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.contentMode = .scaleAspectFill
+        iv.layer.masksToBounds = true
         iv.clipsToBounds = true
         return iv
     }()
-    let blueShirtImageButton: UIButton = {
+    var blueShirtImageButton: UIButton = {
         let btn = UIButton(type: .system)
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.addTarget(self, action: #selector(changeToBlueImage), for: .touchUpInside)
@@ -26,7 +27,7 @@ class DetailVC: UICollectionViewController {
         return btn
     }()
     
-    let yellowImageButton: UIButton = {
+    var yellowImageButton: UIButton = {
         let btn = UIButton(type: .system)
         btn.addTarget(self, action: #selector(changeToYellowImage), for: .touchUpInside)
         btn.translatesAutoresizingMaskIntoConstraints = false

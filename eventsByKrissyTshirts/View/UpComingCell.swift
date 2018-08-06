@@ -9,14 +9,89 @@
 import UIKit
 
 class UpComingCell: UICollectionViewCell {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        backgroundColor = .blue
+    var tshirts: Tshirt? {
+        didSet{
+            //
+            if let tshirtimage = tshirts?.mainImage{
+                TshirtImageView.image = UIImage(named: (tshirtimage))
+            }
+            
+            PriceLabel.text = tshirts?.price
+            TitleLabel.text = tshirts?.title
+        }
+        
     }
     
+    
+    
+    
+    let TshirtImageView: UIImageView = {
+        let imageV = UIImageView(image: #imageLiteral(resourceName: "la"))
+        imageV.layer.masksToBounds = true
+        imageV.clipsToBounds = true
+        imageV.translatesAutoresizingMaskIntoConstraints = false
+        imageV.contentMode = .scaleAspectFill
+        return imageV
+    }()
+    
+    let TitleLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.numberOfLines = 2
+        label.layer.masksToBounds = true
+        label.clipsToBounds = true
+        label.text = "Some Title"
+        label.font = UIFont.boldSystemFont(ofSize: 25)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    let PriceLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.text = "$50"
+        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        addSubview(TshirtImageView)
+        addSubview(TitleLabel)
+        addSubview(PriceLabel)
+        
+        setupViews()
+    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    func setupViews() {
+        
+        backgroundColor = .blue
+        
+        
+        TshirtImageView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        TshirtImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        TshirtImageView.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
+        TshirtImageView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
+        
+        TitleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        TitleLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        TitleLabel.heightAnchor.constraint(equalToConstant: 75).isActive = true
+        TitleLabel.widthAnchor.constraint(equalToConstant: frame.width/2)
+        
+        PriceLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 15).isActive = true
+        PriceLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 5).isActive = true
+        PriceLabel.topAnchor.constraint(equalTo: TshirtImageView.bottomAnchor, constant: 10).isActive = true
+        PriceLabel.heightAnchor.constraint(equalToConstant: frame.height/16).isActive = true
+        PriceLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        
+        
+        
+        
+    }
 }
