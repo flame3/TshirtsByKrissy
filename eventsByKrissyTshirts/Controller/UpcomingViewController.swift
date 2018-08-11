@@ -22,11 +22,6 @@ class UpcomingViewController: UICollectionViewController  {
         return [jesusShirt, peaceShirt, getbackShirt, coolShirt, jeanShirt, jeffShirt, lolipopShirt]
     }()
 
-    let rightShoppingCartButton: UIBarButtonItem = {
-        let btn = UIBarButtonItem()
-        btn.image = UIImage(named: "shopping-bag")
-        return btn
-    }()
     
     let cellID = "cellID"
     let navUpComingNavController = UINavigationController(rootViewController: DetailVC())
@@ -42,10 +37,11 @@ class UpcomingViewController: UICollectionViewController  {
         collectionView?.register(UpComingCell.self, forCellWithReuseIdentifier: cellID)
     }
     
+    
     fileprivate func setupNavBar(){
     
     navigationItem.title = "Upcoming Tshirts"
-    navigationItem.rightBarButtonItem = rightShoppingCartButton
+    navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "shopping-bag"), style: .plain, target: self, action: #selector(showShoppingBag))
     navigationItem.leftBarButtonItem?.backgroundImage(for: .normal, style: .plain, barMetrics: .default)
     
     }

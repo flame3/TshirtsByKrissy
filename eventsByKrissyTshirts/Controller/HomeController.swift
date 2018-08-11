@@ -26,12 +26,6 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
     }()
    
     
-    let rightShoppingCartButton: UIBarButtonItem = {
-        let btn = UIBarButtonItem()
-        btn.image = UIImage(named: "shopping-bag")
-        return btn
-    }()
-    
  
     
 //    let bannerImage: UIImageView = {
@@ -48,7 +42,7 @@ class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLa
         super.viewDidLoad()
         
         navigationItem.title = "Home"
-        navigationItem.rightBarButtonItem = rightShoppingCartButton
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "shopping-bag"), style: .plain, target: self, action: #selector(showShoppingBag))
         navigationItem.leftBarButtonItem?.backgroundImage(for: .normal, style: .plain, barMetrics: .default)
         
     

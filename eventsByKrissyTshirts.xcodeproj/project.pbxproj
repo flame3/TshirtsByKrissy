@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		5912BECD211637D800C4433B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5912BECC211637D800C4433B /* AboutViewController.swift */; };
 		5912BED021163A0D00C4433B /* AboutHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5912BECF21163A0D00C4433B /* AboutHandlers.swift */; };
-		5912BED22116416B00C4433B /* EmailExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5912BED12116416B00C4433B /* EmailExt.swift */; };
-		593B4EE9210CDA1700F3A464 /* UpcomingViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B4EE8210CDA1700F3A464 /* UpcomingViewControllerExt.swift */; };
+		5912BED22116416B00C4433B /* AboutEmailFunc++Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5912BED12116416B00C4433B /* AboutEmailFunc++Ext.swift */; };
+		593B4EE9210CDA1700F3A464 /* UpcomingVCCollectionV++Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B4EE8210CDA1700F3A464 /* UpcomingVCCollectionV++Ext.swift */; };
 		593D8DE12117A89200A18B70 /* Tshirt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593D8DE02117A89200A18B70 /* Tshirt.swift */; };
-		594544CC2113313C00BB8208 /* DetailViewController++Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594544CB2113313C00BB8208 /* DetailViewController++Ext.swift */; };
+		594544CC2113313C00BB8208 /* DetailPickerView++Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594544CB2113313C00BB8208 /* DetailPickerView++Ext.swift */; };
 		594544CE2113A21800BB8208 /* AccountTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594544CD2113A21800BB8208 /* AccountTableCell.swift */; };
-		594544D02113A52600BB8208 /* AccountViewController++Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594544CF2113A52600BB8208 /* AccountViewController++Ext.swift */; };
+		594544D02113A52600BB8208 /* AccountTableView++Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594544CF2113A52600BB8208 /* AccountTableView++Ext.swift */; };
 		595300B820ED24E80057C29C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595300B720ED24E80057C29C /* AppDelegate.swift */; };
 		595300BA20ED24E80057C29C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595300B920ED24E80057C29C /* HomeController.swift */; };
 		595300BD20ED24E80057C29C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595300BB20ED24E80057C29C /* Main.storyboard */; };
@@ -22,6 +22,11 @@
 		595300C220ED24EE0057C29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595300C020ED24EE0057C29C /* LaunchScreen.storyboard */; };
 		595300CD20ED24EF0057C29C /* eventsByKrissyTshirtsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595300CC20ED24EF0057C29C /* eventsByKrissyTshirtsTests.swift */; };
 		595300D820ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595300D720ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift */; };
+		59A6C487211E522300B73909 /* ShoppingCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A6C486211E522300B73909 /* ShoppingCartController.swift */; };
+		59A6C489211E5E6200B73909 /* HomeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A6C488211E5E6200B73909 /* HomeHandler.swift */; };
+		59A6C48B211E619800B73909 /* UpcomingHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A6C48A211E619800B73909 /* UpcomingHandlers.swift */; };
+		59A6C48D211E655900B73909 /* ShoppingBagHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A6C48C211E655900B73909 /* ShoppingBagHandlers.swift */; };
+		59A6C48F211E69A300B73909 /* ShoppingCollection++Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A6C48E211E69A300B73909 /* ShoppingCollection++Ext.swift */; };
 		59B9FFC720F284EC000FF8AC /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9FFC620F284EC000FF8AC /* UpcomingViewController.swift */; };
 		59B9FFC920F28511000FF8AC /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9FFC820F28511000FF8AC /* AccountVC.swift */; };
 		59B9FFCB20F28A30000FF8AC /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9FFCA20F28A30000FF8AC /* HomeTabBarController.swift */; };
@@ -52,12 +57,12 @@
 /* Begin PBXFileReference section */
 		5912BECC211637D800C4433B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		5912BECF21163A0D00C4433B /* AboutHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutHandlers.swift; sourceTree = "<group>"; };
-		5912BED12116416B00C4433B /* EmailExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailExt.swift; sourceTree = "<group>"; };
-		593B4EE8210CDA1700F3A464 /* UpcomingViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewControllerExt.swift; sourceTree = "<group>"; };
+		5912BED12116416B00C4433B /* AboutEmailFunc++Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AboutEmailFunc++Ext.swift"; sourceTree = "<group>"; };
+		593B4EE8210CDA1700F3A464 /* UpcomingVCCollectionV++Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UpcomingVCCollectionV++Ext.swift"; sourceTree = "<group>"; };
 		593D8DE02117A89200A18B70 /* Tshirt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tshirt.swift; sourceTree = "<group>"; };
-		594544CB2113313C00BB8208 /* DetailViewController++Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController++Ext.swift"; sourceTree = "<group>"; };
+		594544CB2113313C00BB8208 /* DetailPickerView++Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailPickerView++Ext.swift"; sourceTree = "<group>"; };
 		594544CD2113A21800BB8208 /* AccountTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableCell.swift; sourceTree = "<group>"; };
-		594544CF2113A52600BB8208 /* AccountViewController++Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountViewController++Ext.swift"; sourceTree = "<group>"; };
+		594544CF2113A52600BB8208 /* AccountTableView++Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountTableView++Ext.swift"; sourceTree = "<group>"; };
 		595300B420ED24E80057C29C /* eventsByKrissyTshirts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eventsByKrissyTshirts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		595300B720ED24E80057C29C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		595300B920ED24E80057C29C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -71,6 +76,11 @@
 		595300D320ED24EF0057C29C /* eventsByKrissyTshirtsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eventsByKrissyTshirtsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		595300D720ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsByKrissyTshirtsUITests.swift; sourceTree = "<group>"; };
 		595300D920ED24EF0057C29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59A6C486211E522300B73909 /* ShoppingCartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartController.swift; sourceTree = "<group>"; };
+		59A6C488211E5E6200B73909 /* HomeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHandler.swift; sourceTree = "<group>"; };
+		59A6C48A211E619800B73909 /* UpcomingHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingHandlers.swift; sourceTree = "<group>"; };
+		59A6C48C211E655900B73909 /* ShoppingBagHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBagHandlers.swift; sourceTree = "<group>"; };
+		59A6C48E211E69A300B73909 /* ShoppingCollection++Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShoppingCollection++Ext.swift"; sourceTree = "<group>"; };
 		59B9FFC620F284EC000FF8AC /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		59B9FFC820F28511000FF8AC /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		59B9FFCA20F28A30000FF8AC /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
@@ -110,6 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				5912BECF21163A0D00C4433B /* AboutHandlers.swift */,
+				59A6C488211E5E6200B73909 /* HomeHandler.swift */,
+				59A6C48A211E619800B73909 /* UpcomingHandlers.swift */,
+				59A6C48C211E655900B73909 /* ShoppingBagHandlers.swift */,
 			);
 			path = Handlers;
 			sourceTree = "<group>";
@@ -117,10 +130,11 @@
 		593B4EE7210CD9EB00F3A464 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				593B4EE8210CDA1700F3A464 /* UpcomingViewControllerExt.swift */,
-				594544CB2113313C00BB8208 /* DetailViewController++Ext.swift */,
-				594544CF2113A52600BB8208 /* AccountViewController++Ext.swift */,
-				5912BED12116416B00C4433B /* EmailExt.swift */,
+				593B4EE8210CDA1700F3A464 /* UpcomingVCCollectionV++Ext.swift */,
+				594544CB2113313C00BB8208 /* DetailPickerView++Ext.swift */,
+				594544CF2113A52600BB8208 /* AccountTableView++Ext.swift */,
+				5912BED12116416B00C4433B /* AboutEmailFunc++Ext.swift */,
+				59A6C48E211E69A300B73909 /* ShoppingCollection++Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,6 +224,7 @@
 				59B9FFD420F2CF08000FF8AC /* PaymentVC.swift */,
 				59B9FFCA20F28A30000FF8AC /* HomeTabBarController.swift */,
 				5912BECC211637D800C4433B /* AboutViewController.swift */,
+				59A6C486211E522300B73909 /* ShoppingCartController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,24 +360,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				593B4EE9210CDA1700F3A464 /* UpcomingViewControllerExt.swift in Sources */,
+				59A6C487211E522300B73909 /* ShoppingCartController.swift in Sources */,
+				593B4EE9210CDA1700F3A464 /* UpcomingVCCollectionV++Ext.swift in Sources */,
 				59B9FFC720F284EC000FF8AC /* UpcomingViewController.swift in Sources */,
 				594544CE2113A21800BB8208 /* AccountTableCell.swift in Sources */,
 				5912BECD211637D800C4433B /* AboutViewController.swift in Sources */,
+				59A6C48B211E619800B73909 /* UpcomingHandlers.swift in Sources */,
+				59A6C489211E5E6200B73909 /* HomeHandler.swift in Sources */,
 				595300BA20ED24E80057C29C /* HomeController.swift in Sources */,
 				59B9FFCB20F28A30000FF8AC /* HomeTabBarController.swift in Sources */,
 				59B9FFCF20F29B75000FF8AC /* ShoppingCartCell.swift in Sources */,
-				594544D02113A52600BB8208 /* AccountViewController++Ext.swift in Sources */,
+				594544D02113A52600BB8208 /* AccountTableView++Ext.swift in Sources */,
 				59C46EC820EF982200B8DDE2 /* HomeCell.swift in Sources */,
 				593D8DE12117A89200A18B70 /* Tshirt.swift in Sources */,
+				59A6C48F211E69A300B73909 /* ShoppingCollection++Ext.swift in Sources */,
 				59B9FFCD20F29B24000FF8AC /* UpComingCell.swift in Sources */,
 				5912BED021163A0D00C4433B /* AboutHandlers.swift in Sources */,
+				59A6C48D211E655900B73909 /* ShoppingBagHandlers.swift in Sources */,
 				59B9FFD120F2CE78000FF8AC /* DetailVC.swift in Sources */,
 				595300B820ED24E80057C29C /* AppDelegate.swift in Sources */,
 				59B9FFD520F2CF08000FF8AC /* PaymentVC.swift in Sources */,
-				5912BED22116416B00C4433B /* EmailExt.swift in Sources */,
+				5912BED22116416B00C4433B /* AboutEmailFunc++Ext.swift in Sources */,
 				59B9FFC920F28511000FF8AC /* AccountVC.swift in Sources */,
-				594544CC2113313C00BB8208 /* DetailViewController++Ext.swift in Sources */,
+				594544CC2113313C00BB8208 /* DetailPickerView++Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

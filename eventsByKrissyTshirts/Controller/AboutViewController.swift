@@ -14,7 +14,7 @@ class AboutViewController: UIViewController {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.contentMode = .scaleAspectFill
-        image.backgroundColor = .blue
+        image.backgroundColor = .white
         return image
     }()
     

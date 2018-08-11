@@ -10,6 +10,21 @@ import UIKit
 
 class DetailVC: UICollectionViewController {
     
+    lazy var backgroundImageView: UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.contentMode = .scaleAspectFill
+        image.backgroundColor = .white
+        return image
+    }()
+    
+    lazy var glassView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+        return view
+    }()
+    
     var topImageView: UIImageView = {
         let iv = UIImageView()
         iv.image = UIImage(named: "placeholder")
@@ -203,6 +218,8 @@ class DetailVC: UICollectionViewController {
     
     fileprivate func setupElements(){
         // MARK: - Adding Subviews
+        view.addSubview(backgroundImageView)
+        view.addSubview(glassView)
         view.addSubview(topImageView)
         view.addSubview(differentColorContainerView)
             differentColorContainerView.addSubview(blueShirtImageButton)
@@ -216,6 +233,21 @@ class DetailVC: UICollectionViewController {
     
     fileprivate func setupViews() {
        // MARK: - Constraints
+        
+        backgroundImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        backgroundImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        backgroundImageView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        backgroundImageView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        
+        glassView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        glassView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        glassView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        glassView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        glassView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        glassView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+
         
         // setup Top Image View
         topImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
