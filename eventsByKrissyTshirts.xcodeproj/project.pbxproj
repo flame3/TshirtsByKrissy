@@ -22,6 +22,7 @@
 		595300C220ED24EE0057C29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595300C020ED24EE0057C29C /* LaunchScreen.storyboard */; };
 		595300CD20ED24EF0057C29C /* eventsByKrissyTshirtsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595300CC20ED24EF0057C29C /* eventsByKrissyTshirtsTests.swift */; };
 		595300D820ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595300D720ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift */; };
+		599B738A211F7C2F00636E42 /* HomeCollectionView++Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599B7389211F7C2F00636E42 /* HomeCollectionView++Ext.swift */; };
 		59A6C487211E522300B73909 /* ShoppingCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A6C486211E522300B73909 /* ShoppingCartController.swift */; };
 		59A6C489211E5E6200B73909 /* HomeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A6C488211E5E6200B73909 /* HomeHandler.swift */; };
 		59A6C48B211E619800B73909 /* UpcomingHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A6C48A211E619800B73909 /* UpcomingHandlers.swift */; };
@@ -76,6 +77,7 @@
 		595300D320ED24EF0057C29C /* eventsByKrissyTshirtsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eventsByKrissyTshirtsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		595300D720ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsByKrissyTshirtsUITests.swift; sourceTree = "<group>"; };
 		595300D920ED24EF0057C29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		599B7389211F7C2F00636E42 /* HomeCollectionView++Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeCollectionView++Ext.swift"; sourceTree = "<group>"; };
 		59A6C486211E522300B73909 /* ShoppingCartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartController.swift; sourceTree = "<group>"; };
 		59A6C488211E5E6200B73909 /* HomeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHandler.swift; sourceTree = "<group>"; };
 		59A6C48A211E619800B73909 /* UpcomingHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingHandlers.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				594544CF2113A52600BB8208 /* AccountTableView++Ext.swift */,
 				5912BED12116416B00C4433B /* AboutEmailFunc++Ext.swift */,
 				59A6C48E211E69A300B73909 /* ShoppingCollection++Ext.swift */,
+				599B7389211F7C2F00636E42 /* HomeCollectionView++Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				5912BED22116416B00C4433B /* AboutEmailFunc++Ext.swift in Sources */,
 				59B9FFC920F28511000FF8AC /* AccountVC.swift in Sources */,
 				594544CC2113313C00BB8208 /* DetailPickerView++Ext.swift in Sources */,
+				599B738A211F7C2F00636E42 /* HomeCollectionView++Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

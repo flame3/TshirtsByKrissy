@@ -10,7 +10,10 @@ import UIKit
 
 extension ShoppingCartController{
     
-    
+    @objc public func handleBack(){
+        dismiss(animated: true, completion: nil)
+        
+    }
     
     
 }

@@ -10,21 +10,6 @@ import UIKit
 
 class ShoppingCartController: UIViewController {
     
-    lazy var backgroundImageView: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.contentMode = .scaleAspectFill
-        image.backgroundColor = .white
-        return image
-    }()
-    
-    lazy var glassView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.3)
-        return view
-    }()
-    
     
     let shoppingCartCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -32,18 +17,19 @@ class ShoppingCartController: UIViewController {
         cv.register(ShoppingCartCell.self, forCellWithReuseIdentifier: cellID)
         cv.isScrollEnabled = true
         cv.translatesAutoresizingMaskIntoConstraints = false
+        layout.minimumLineSpacing = 20
+        layout.minimumInteritemSpacing = 1
         layout.sectionInset = UIEdgeInsets(top: 2, left: 1, bottom: 0, right: 10)
-        layout.scrollDirection = .horizontal
+        layout.scrollDirection = .vertical
         return cv
     }()
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        view.addSubview(backgroundImageView)
-        view.addSubview(glassView)
+        view.backgroundColor = .white
         view.addSubview(shoppingCartCollectionView)
         
-        shoppingCartCollectionView.backgroundColor = .clear
+        shoppingCartCollectionView.backgroundColor = .white
         
         shoppingCartCollectionView.delegate = self
         shoppingCartCollectionView.dataSource = self
@@ -56,7 +42,7 @@ class ShoppingCartController: UIViewController {
     func setupNavBar(){
         
         navigationController?.navigationBar.topItem?.title = "Shopping Bag"
-        //navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(handleBack))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(handleBack))
 
         
         
@@ -64,19 +50,7 @@ class ShoppingCartController: UIViewController {
     
     func setupViews() {
         
-        backgroundImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        backgroundImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        backgroundImageView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        backgroundImageView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         
-        glassView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        glassView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        glassView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        glassView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        glassView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        glassView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         
         shoppingCartCollectionView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         shoppingCartCollectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
