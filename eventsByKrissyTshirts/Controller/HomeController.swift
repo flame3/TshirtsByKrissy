@@ -28,6 +28,8 @@ class HomeController: UICollectionViewController{
     //- Mark   View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupNavBar()
        
         collectionView?.register(HomeCell.self, forCellWithReuseIdentifier: cellID)
         collectionView?.backgroundColor = .white
@@ -37,17 +39,6 @@ class HomeController: UICollectionViewController{
         navigationItem.title = "Home"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "shopping-bag"), style: .plain, target: self, action: #selector(showShoppingBag))
         navigationItem.leftBarButtonItem?.backgroundImage(for: .normal, style: .plain, barMetrics: .default)
-        
-    }
-    
-   
-   
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-       return .lightContent
-    }
-    
 
+    }
 }
-
-
-

@@ -21,6 +21,7 @@ class UpComingCell: UICollectionViewCell {
         }
         
     }
+  
     
     
     
@@ -37,6 +38,7 @@ class UpComingCell: UICollectionViewCell {
     let TitleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
+        label.textAlignment = .center
         label.numberOfLines = 2
         label.layer.masksToBounds = true
         label.clipsToBounds = true
@@ -57,6 +59,7 @@ class UpComingCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        
         addSubview(TshirtImageView)
         addSubview(TitleLabel)
         addSubview(PriceLabel)
@@ -73,16 +76,15 @@ class UpComingCell: UICollectionViewCell {
         
         backgroundColor = .blue
         
-        
+        TshirtImageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         TshirtImageView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        TshirtImageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        TshirtImageView.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
         TshirtImageView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
+        TshirtImageView.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
         
         TitleLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
         TitleLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         TitleLabel.heightAnchor.constraint(equalToConstant: 75).isActive = true
-        TitleLabel.widthAnchor.constraint(equalToConstant: frame.width/2)
+        TitleLabel.widthAnchor.constraint(equalToConstant: frame.width).isActive = true
         
         PriceLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 15).isActive = true
         PriceLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 5).isActive = true

@@ -31,8 +31,6 @@ class UpcomingViewController: UICollectionViewController  {
         
         setupNavBar()
         
-        print(Tshirt.self)
-
         collectionView?.backgroundColor = .white
         collectionView?.register(UpComingCell.self, forCellWithReuseIdentifier: cellID)
     }
@@ -48,5 +46,3 @@ class UpcomingViewController: UICollectionViewController  {
    
 
 }
-
-

@@ -11,6 +11,7 @@ import UIKit
 class ShoppingCartController: UIViewController {
     
     
+    
     let shoppingCartCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: layout)

@@ -10,7 +10,10 @@ import UIKit
 
 class ShoppingCartCell: UICollectionViewCell {
     
-    let tshirtImageIV: UIImageView = {
+    var ShoppingCartItems = [Tshirt]()
+    
+    
+    lazy var tshirtImageIV: UIImageView = {
         let iv = UIImageView()
         iv.backgroundColor = .blue
         iv.contentMode = .scaleAspectFill
@@ -18,7 +21,7 @@ class ShoppingCartCell: UICollectionViewCell {
         return iv
     }()
     
-    let titleTextLabel: UILabel = {
+    lazy var titleTextLabel: UILabel = {
         let lbl = UILabel()
         lbl.textAlignment = .center
         lbl.textColor = .white
@@ -28,7 +31,7 @@ class ShoppingCartCell: UICollectionViewCell {
         return lbl
     }()
     
-    let sizeTextLabel: UILabel = {
+    lazy var sizeTextLabel: UILabel = {
         let lbl = UILabel()
         lbl.textAlignment = .center
         lbl.textColor = .white
@@ -38,7 +41,7 @@ class ShoppingCartCell: UICollectionViewCell {
         return lbl
     }()
     
-    let priceTextLabel: UILabel = {
+    lazy var priceTextLabel: UILabel = {
         let lbl = UILabel()
         lbl.textAlignment = .center
         lbl.textColor = .white
@@ -69,9 +72,9 @@ class ShoppingCartCell: UICollectionViewCell {
         return btn
     }()
     
-    let addButton: UIButton = {
+    let editButton: UIButton = {
         let btn = UIButton()
-        btn.setTitle("Add", for: .normal)
+        btn.setTitle("Edit", for: .normal)
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
     }()
@@ -86,7 +89,7 @@ class ShoppingCartCell: UICollectionViewCell {
         self.addSubview(priceTextLabel)
         self.addSubview(dividerView)
         self.addSubview(containerView)
-        self.addSubview(addButton)
+        self.addSubview(editButton)
         self.addSubview(deleteButton)
         
         
@@ -133,10 +136,10 @@ class ShoppingCartCell: UICollectionViewCell {
             deleteButton.heightAnchor.constraint(equalToConstant: 50),
             deleteButton.widthAnchor.constraint(equalToConstant: 50),
             
-            addButton.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
-            addButton.rightAnchor.constraint(equalTo: rightAnchor),
-            addButton.heightAnchor.constraint(equalToConstant: 100),
-            addButton.widthAnchor.constraint(equalToConstant: 100),
+            editButton.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
+            editButton.rightAnchor.constraint(equalTo: rightAnchor),
+            editButton.heightAnchor.constraint(equalToConstant: 100),
+            editButton.widthAnchor.constraint(equalToConstant: 100),
             
             
             

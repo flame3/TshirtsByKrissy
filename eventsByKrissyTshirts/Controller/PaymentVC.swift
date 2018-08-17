@@ -13,7 +13,8 @@ class PaymentVC: UIViewController {
         super.viewDidLoad()
         
         
-        view.backgroundColor = .white
+        view.backgroundColor = .blue
+        view.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         
     }
     

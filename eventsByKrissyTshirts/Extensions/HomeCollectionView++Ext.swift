@@ -19,7 +19,11 @@ extension HomeController: UICollectionViewDelegateFlowLayout{
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> HomeCell {
         var cell = HomeCell()
         cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! HomeCell
-        cell.layer.cornerRadius = 10
+        cell.layer.cornerRadius = 50
+        cell.layer.shadowRadius = 25
+        cell.layer.shadowOffset = CGSize(width: 20, height: 20)
+        cell.layer.shadowOpacity = 1
+        cell.layer.shadowColor = UIColor.black.cgColor
         
         cell.tshirts = Tshirts[indexPath.item]
         return cell
@@ -27,21 +31,19 @@ extension HomeController: UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //width for iphone x   need to find size for other devices
-        return CGSize(width: (view.frame.width/2), height: (view.frame.height/2)-87)
+        let homeImage = UIImage(named: Tshirts[indexPath.row].mainImage)
+        let imageHeight =  (homeImage?.size.height)! + 100
+        return CGSize(width: view.frame.width, height: imageHeight)
     }
     
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.item)
-        //        let layout = UICollectionViewFlowLayout()
-        //        let controller = DetailVC(collectionViewLayout: layout)
-        //        navigationController?.pushViewController(controller, animated: true)
         let layout = UICollectionViewFlowLayout()
-        let upComingDetail = DetailVC(collectionViewLayout: layout)
-        let upcomingImage = UIImage(named: Tshirts[indexPath.row].mainImage)
-        upComingDetail.topImageView.image = upcomingImage
-        //upComingDetail.
-        navigationController?.pushViewController(upComingDetail, animated: true)
+        let homeDetail = DetailVC(collectionViewLayout: layout)
+        let homeImage = UIImage(named: Tshirts[indexPath.row].mainImage)
+        homeDetail.topImageView.image = homeImage
+        navigationController?.pushViewController(homeDetail, animated: true)
     }
     
 }

@@ -13,10 +13,14 @@ import UIKit
 extension UpcomingViewController: UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! UpComingCell
-        cell.layer.cornerRadius = 10
-        
+        cell.layer.cornerRadius = 50
+        cell.layer.shadowRadius = 25
+        cell.layer.shadowOffset = CGSize(width: 20, height: 20)
+        cell.layer.shadowOpacity = 1
+        cell.layer.shadowColor = UIColor.black.cgColor
+
+
         cell.tshirts = Tshirts[indexPath.item]
-        
         return cell
     }
     
@@ -25,7 +29,10 @@ extension UpcomingViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: (view.frame.height/2)-87)
+ 
+        let upcomingImage = UIImage(named: Tshirts[indexPath.row].mainImage)
+        let imageHeight = upcomingImage?.size.height
+        return CGSize(width: view.frame.width, height: imageHeight!)
     }
     
     
@@ -35,7 +42,6 @@ extension UpcomingViewController: UICollectionViewDelegateFlowLayout {
         let upComingDetail = DetailVC(collectionViewLayout: layout)
         let upcomingImage = UIImage(named: Tshirts[indexPath.row].mainImage)
         upComingDetail.topImageView.image = upcomingImage
-        //upComingDetail.
         navigationController?.pushViewController(upComingDetail, animated: true)
         
         

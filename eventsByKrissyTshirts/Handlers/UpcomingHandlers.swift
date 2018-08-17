@@ -13,6 +13,5 @@ extension UpcomingViewController{
         let vc = UINavigationController(rootViewController: ShoppingCartController())
         present(vc, animated: true, completion: nil)
         
-        
     }
 }
