@@ -9,8 +9,10 @@
 import UIKit
 
 class ShoppingCartController: UIViewController {
-    
-    
+//    var tshirtImage = ""
+//    var tshirtPrice = ""
+//    var tshirtTitle = ""
+    var cart: [CartItems]!
     
     let shoppingCartCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()

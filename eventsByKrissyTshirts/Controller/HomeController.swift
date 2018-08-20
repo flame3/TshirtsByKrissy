@@ -13,17 +13,9 @@ class HomeController: UICollectionViewController{
     let cellID = "cellID"
     
 
-    var Tshirts: [Tshirt] = {
-        var whiteShirt = Tshirt(mainImage: "white-shirt", title: "Be an Anomoly", price: "50")
-        var whateverShirt = Tshirt(mainImage: "whatever", title: "Whatever  ", price: "50")
-        var stayWildShirt = Tshirt(mainImage: "stay-wild", title: "Never be Tamed", price: "50")
-        var tomatoShirt  = Tshirt(mainImage: "tomato", title: "Tomato or Tomoto  ", price: "50")
-        var undefeatedShirt = Tshirt(mainImage: "undefeated", title: "Dont take any L's    ", price: "50")
-        var outcastShirt = Tshirt(mainImage: "outcast", title: "Dont fit into the Box  ", price: "50")
-        var laShirt = Tshirt(mainImage: "la", title: "No place like L.A.", price: "50")
-        
-        return [whiteShirt, whateverShirt, stayWildShirt, tomatoShirt, undefeatedShirt, outcastShirt, laShirt]
-    }()
+    var tshirts: [Tshirt]!
+       
+    
     
     //- Mark   View Did Load
     override func viewDidLoad() {
@@ -31,6 +23,8 @@ class HomeController: UICollectionViewController{
         
         setupNavBar()
        
+        self.tshirts = Tshirt.getAllHomeTshirts()
+
         collectionView?.register(HomeCell.self, forCellWithReuseIdentifier: cellID)
         collectionView?.backgroundColor = .white
     }

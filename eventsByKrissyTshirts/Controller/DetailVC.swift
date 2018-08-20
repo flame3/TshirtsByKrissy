@@ -25,7 +25,7 @@ class DetailVC: UICollectionViewController {
         return view
     }()
     
-    var topImageView: UIImageView = {
+    lazy var topImageView: UIImageView = {
         let iv = UIImageView()
         iv.image = UIImage(named: "placeholder")
         iv.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +34,31 @@ class DetailVC: UICollectionViewController {
         iv.clipsToBounds = true
         return iv
     }()
-    var blueShirtImageButton: UIButton = {
+    
+    let titleLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.textAlignment = .center
+        label.numberOfLines = 2
+        label.layer.masksToBounds = true
+        label.clipsToBounds = true
+        label.text = "Some Title"
+        label.font = UIFont.boldSystemFont(ofSize: 25)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    let priceLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .white
+        label.text = "$50"
+        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+
+    
+    
+    lazy var blueShirtImageButton: UIButton = {
         let btn = UIButton(type: .system)
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.addTarget(self, action: #selector(changeToBlueImage), for: .touchUpInside)
@@ -42,7 +66,7 @@ class DetailVC: UICollectionViewController {
         return btn
     }()
     
-    var yellowImageButton: UIButton = {
+    lazy var yellowImageButton: UIButton = {
         let btn = UIButton(type: .system)
         btn.addTarget(self, action: #selector(changeToYellowImage), for: .touchUpInside)
         btn.translatesAutoresizingMaskIntoConstraints = false
@@ -50,7 +74,7 @@ class DetailVC: UICollectionViewController {
         return btn
     }()
     
-    let greenTshirtImageButton: UIButton = {
+    lazy var greenTshirtImageButton: UIButton = {
         let btn = UIButton(type: .system)
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.addTarget(self, action: #selector(changeToGreenImage(_sender:)), for: .touchUpInside)
@@ -58,7 +82,7 @@ class DetailVC: UICollectionViewController {
         return btn
     }()
     
-    let differentColorContainerView: UIView = {
+    lazy var differentColorContainerView: UIView = {
         let container = UIView()
         container.translatesAutoresizingMaskIntoConstraints = false
         return container
@@ -74,19 +98,19 @@ class DetailVC: UICollectionViewController {
     }()
     
     
-    let sizePickerView: UIPickerView = {
+    lazy var sizePickerView: UIPickerView = {
         let picker = UIPickerView()
         picker.backgroundColor = .orange
        return picker
     }()
     
-    let quantityPickerView: UIPickerView = {
+    lazy var quantityPickerView: UIPickerView = {
         let picker = UIPickerView()
         picker.backgroundColor = .brown
         return picker
     }()
     
-    let addToBagButton: UIButton = {
+    lazy var addToBagButton: UIButton = {
        let btn = UIButton(type: .system)
         btn.setTitle("Add to Bag", for: .normal)
         btn.addTarget(self, action: #selector(handleAddToBag), for: .touchUpInside)
@@ -131,6 +155,8 @@ class DetailVC: UICollectionViewController {
         view.addSubview(backgroundImageView)
         view.addSubview(glassView)
         view.addSubview(topImageView)
+        view.addSubview(titleLabel)
+        view.addSubview(priceLabel)
         view.addSubview(differentColorContainerView)
             differentColorContainerView.addSubview(blueShirtImageButton)
             differentColorContainerView.addSubview(yellowImageButton)
@@ -164,6 +190,19 @@ class DetailVC: UICollectionViewController {
         topImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         topImageView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
         topImageView.heightAnchor.constraint(equalToConstant: 250).isActive = true
+        
+        // setup Title Label
+        titleLabel.topAnchor.constraint(equalTo: topImageView.topAnchor).isActive = true
+        titleLabel.centerXAnchor.constraint(equalTo: topImageView.centerXAnchor).isActive = true
+        titleLabel.widthAnchor.constraint(equalTo: topImageView.widthAnchor).isActive = true
+        titleLabel.heightAnchor.constraint(equalToConstant: 250).isActive = true
+        
+        // setup Price Label
+        priceLabel.rightAnchor.constraint(equalTo: topImageView.rightAnchor, constant: 15).isActive = true
+        priceLabel.bottomAnchor.constraint(equalTo: topImageView.bottomAnchor, constant: 5).isActive = true
+        priceLabel.topAnchor.constraint(equalTo: topImageView.bottomAnchor, constant: 10).isActive = true
+        priceLabel.heightAnchor.constraint(equalToConstant: topImageView.frame.height/16).isActive = true
+        priceLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
         
         // setup Different Color Image Container
         differentColorContainerView.topAnchor.constraint(equalTo: topImageView.bottomAnchor, constant: 10).isActive = true

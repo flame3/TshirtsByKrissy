@@ -51,7 +51,7 @@ class HomeCell: UICollectionViewCell {
         let label = UILabel()
         label.textColor = .white
         label.text = "$50"
-        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.font = UIFont.boldSystemFont(ofSize: 18)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

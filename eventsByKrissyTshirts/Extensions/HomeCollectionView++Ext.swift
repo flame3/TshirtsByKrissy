@@ -13,7 +13,7 @@ extension HomeController: UICollectionViewDelegateFlowLayout{
     
     //- Mark CollectionView Functions
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Tshirts.count
+        return tshirts.count
         
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> HomeCell {
@@ -25,13 +25,13 @@ extension HomeController: UICollectionViewDelegateFlowLayout{
         cell.layer.shadowOpacity = 1
         cell.layer.shadowColor = UIColor.black.cgColor
         
-        cell.tshirts = Tshirts[indexPath.item]
+        cell.tshirts = tshirts[indexPath.item]
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //width for iphone x   need to find size for other devices
-        let homeImage = UIImage(named: Tshirts[indexPath.row].mainImage)
+        let homeImage = UIImage(named: tshirts[indexPath.row].mainImage)
         let imageHeight =  (homeImage?.size.height)! + 100
         return CGSize(width: view.frame.width, height: imageHeight)
     }
@@ -41,7 +41,7 @@ extension HomeController: UICollectionViewDelegateFlowLayout{
         print(indexPath.item)
         let layout = UICollectionViewFlowLayout()
         let homeDetail = DetailVC(collectionViewLayout: layout)
-        let homeImage = UIImage(named: Tshirts[indexPath.row].mainImage)
+        let homeImage = UIImage(named: tshirts[indexPath.row].mainImage)
         homeDetail.topImageView.image = homeImage
         navigationController?.pushViewController(homeDetail, animated: true)
     }

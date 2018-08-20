@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "eventsByKrissyTshirts/View/UpComingCell.swift"
-            timestampString = "556210657.731356"
+            timestampString = "556461161.070815"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "setupViews()"
             landmarkType = "7">
          </BreakpointContent>

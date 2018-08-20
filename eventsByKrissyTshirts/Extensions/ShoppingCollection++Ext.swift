@@ -10,11 +10,23 @@ import UIKit
 
 extension ShoppingCartController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        //return cart.count
+        return 11
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! ShoppingCartCell
+
+//        for item in cart {
+//            
+//            cell.tshirtImageIV.image = cart[indexPath.row].tshirtImage
+//            cell.titleTextLabel.text = cart[indexPath.row].tshirtPrice
+//            cell.priceTextLabel.text = cart[indexPath.row].tshirtTitle
+//            print(item)
+//            
+//        }
+        
         cell.layer.cornerRadius = 15
         cell.layer.shadowRadius = 2
         cell.layer.shadowColor = UIColor.gray.cgColor

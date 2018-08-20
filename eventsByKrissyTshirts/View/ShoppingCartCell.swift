@@ -46,7 +46,7 @@ class ShoppingCartCell: UICollectionViewCell {
         lbl.textAlignment = .center
         lbl.textColor = .white
         lbl.translatesAutoresizingMaskIntoConstraints = false
-        lbl.font = UIFont.boldSystemFont(ofSize: 16)
+        lbl.font = UIFont.boldSystemFont(ofSize: 18)
         lbl.text = "$50"
         return lbl
     }()

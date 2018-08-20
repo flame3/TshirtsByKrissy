@@ -9,19 +9,20 @@
 import UIKit
 
 class UpComingCell: UICollectionViewCell {
-    var tshirts: Tshirt? {
+    
+    var tshirts: Tshirt! {
         didSet{
-            //
-            if let tshirtimage = tshirts?.mainImage{
-                TshirtImageView.image = UIImage(named: (tshirtimage))
-            }
-            
+            TshirtImageView.image = UIImage(named: tshirts.mainImage)
             PriceLabel.text = tshirts?.price
             TitleLabel.text = tshirts?.title
+           
+            }
+            
+        
         }
         
-    }
-  
+
+
     
     
     
@@ -51,7 +52,7 @@ class UpComingCell: UICollectionViewCell {
         let label = UILabel()
         label.textColor = .white
         label.text = "$50"
-        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.font = UIFont.boldSystemFont(ofSize: 18)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

@@ -20,17 +20,17 @@ extension UpcomingViewController: UICollectionViewDelegateFlowLayout {
         cell.layer.shadowColor = UIColor.black.cgColor
 
 
-        cell.tshirts = Tshirts[indexPath.item]
+        cell.tshirts = tshirts[indexPath.item]
         return cell
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Tshirts.count
+        return tshirts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
  
-        let upcomingImage = UIImage(named: Tshirts[indexPath.row].mainImage)
+        let upcomingImage = UIImage(named: tshirts[indexPath.row].mainImage)
         let imageHeight = upcomingImage?.size.height
         return CGSize(width: view.frame.width, height: imageHeight!)
     }
@@ -40,7 +40,7 @@ extension UpcomingViewController: UICollectionViewDelegateFlowLayout {
         
         let layout = UICollectionViewFlowLayout()
         let upComingDetail = DetailVC(collectionViewLayout: layout)
-        let upcomingImage = UIImage(named: Tshirts[indexPath.row].mainImage)
+        let upcomingImage = UIImage(named: tshirts[indexPath.row].mainImage)
         upComingDetail.topImageView.image = upcomingImage
         navigationController?.pushViewController(upComingDetail, animated: true)
         

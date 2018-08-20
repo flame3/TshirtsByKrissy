@@ -35,14 +35,27 @@ extension DetailVC{
         //var items = [Tshirt] ()
         
         
+//        let shopCell = ShoppingCartCell()
+//        let shopVC = ShoppingCartController()
+//
+//        didSet{
+//
+//            let image = topImageView.image
+//            let price = priceLabel.text
+//            let detailTitleLabel = titleLabel.text
+//
+//        }
+//
+//
+//        shopCell.priceTextLabel = priceLabel
+//        //.sizeTextLabel = sizePickerView
+////        shopVC.ShoppingCartItems += [Tshirt(mainImage: "jesus", firstColor: "placeholder", SecondColor: "placeholder", ThirdColor: "placeholder",  title: shopVC.titleTextLabel.text!, price: shopVC.priceTextLabel.text!)]
+//        shopVC.cart.append(CartItems(image: image!, title: price!, price: detailTitleLabel!))
+        let vc = UINavigationController(rootViewController: ShoppingCartController())
+        present(vc, animated: true, completion: nil)
         
-        let shopVC = ShoppingCartCell()
-        shopVC.tshirtImageIV = topImageView
-        //shopVC.priceTextLabel = priceLabel
-        //shopVC.sizeTextLabel = sizePickerView
-        shopVC.ShoppingCartItems += [Tshirt(mainImage: "jesus", title: shopVC.titleTextLabel.text!, price: shopVC.priceTextLabel.text!)]
         
-        print(shopVC.ShoppingCartItems.count)
+        //print(shopVC.cart.count)
         
     }
     
