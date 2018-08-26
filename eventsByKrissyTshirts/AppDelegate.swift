@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.rootViewController = HomeTabBarController()
         
+        
         return true
     }
 

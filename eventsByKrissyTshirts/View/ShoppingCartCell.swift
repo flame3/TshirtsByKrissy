@@ -10,9 +10,6 @@ import UIKit
 
 class ShoppingCartCell: UICollectionViewCell {
     
-    var ShoppingCartItems = [Tshirt]()
-    
-    
     lazy var tshirtImageIV: UIImageView = {
         let iv = UIImageView()
         iv.backgroundColor = .blue

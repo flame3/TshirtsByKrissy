@@ -22,6 +22,7 @@ class HomeTabBarController: UITabBarController {
         let upComingNavController = UINavigationController(rootViewController: upcomingVC)
         upComingNavController.title = "UpComing"
         upComingNavController.navigationBar.tintColor = .gray
+        upComingNavController.navigationBar.isTranslucent = true
         upComingNavController.tabBarItem.image = UIImage(named: "thermometer")
         
         /*  Home tab   */
@@ -33,6 +34,8 @@ class HomeTabBarController: UITabBarController {
         let homeNavController = UINavigationController(rootViewController: homeVC)
         homeNavController.title = "Home"
         homeNavController.navigationBar.tintColor = .gray
+        homeNavController.navigationBar.isTranslucent = true
+
         homeNavController.tabBarItem.image = UIImage(named: "home")
         
         /*  About tab   */
@@ -40,6 +43,7 @@ class HomeTabBarController: UITabBarController {
         let accountNavController = UINavigationController(rootViewController: aboutVC)
         accountNavController.title = "About"
         accountNavController.navigationBar.tintColor = .gray
+        accountNavController.navigationBar.isTranslucent = true
         accountNavController.tabBarItem.image = UIImage(named: "user")
         
         viewControllers = [upComingNavController, homeNavController, accountNavController]

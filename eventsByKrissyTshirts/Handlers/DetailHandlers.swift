@@ -25,11 +25,11 @@ extension DetailVC{
     // Began to setup Payment process ran into issue with UIStackView
     // May just have to implement btns with constraints to avoid the obstacles
     @objc func gotoShoppingBag(){
-        let vc = PaymentVC()
-        present(vc, animated: true) {
+        
+        Alert.showBasic(title: "Not available", msg: "Nothing to see here just yet", vc: self)
             
         }
-    }
+    
     
     @objc func handleAddToBag(){
         //var items = [Tshirt] ()
@@ -48,11 +48,12 @@ extension DetailVC{
 //
 //
 //        shopCell.priceTextLabel = priceLabel
-//        //.sizeTextLabel = sizePickerView
-////        shopVC.ShoppingCartItems += [Tshirt(mainImage: "jesus", firstColor: "placeholder", SecondColor: "placeholder", ThirdColor: "placeholder",  title: shopVC.titleTextLabel.text!, price: shopVC.priceTextLabel.text!)]
+//        .sizeTextLabel = sizePickerView
+////       shopVC.ShoppingCartItems += [Tshirt(mainImage: "jesus", firstColor: "placeholder", SecondColor: "placeholder", ThirdColor: "placeholder",  title: shopVC.titleTextLabel.text!, price: shopVC.priceTextLabel.text!)]
 //        shopVC.cart.append(CartItems(image: image!, title: price!, price: detailTitleLabel!))
-        let vc = UINavigationController(rootViewController: ShoppingCartController())
-        present(vc, animated: true, completion: nil)
+        
+        
+        
         
         
         //print(shopVC.cart.count)

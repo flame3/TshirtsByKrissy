@@ -9,11 +9,9 @@
 import UIKit
 
 class ShoppingCartController: UIViewController {
-//    var tshirtImage = ""
-//    var tshirtPrice = ""
-//    var tshirtTitle = ""
-    var cart: [CartItems]!
     
+    var Item = [CartItem]()
+
     let shoppingCartCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let cv = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: layout)
@@ -31,14 +29,34 @@ class ShoppingCartController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         view.addSubview(shoppingCartCollectionView)
-        
         shoppingCartCollectionView.backgroundColor = .white
-        
         shoppingCartCollectionView.delegate = self
         shoppingCartCollectionView.dataSource = self
-        
         setupNavBar()
         setupViews()
+        //print("MARKKKKK!!!!!!! image: \(Cart?.tshirtImage),title: \(Cart?.tshirtTitle),price; \(Cart?.tshirtPrice)")
+        
+        
+        addItemsToArray()
+        
+    }
+    
+    func addItemsToArray() {
+        
+        let detailCell = DetailVC()
+        let img = detailCell.topImageView.image
+        let title = detailCell.titleLabel.text
+        let price = detailCell.priceLabel.text
+        let items = CartItem(image: img!, title: title!, price: price!)
+        Item.append(items)
+        
+        
+    
+        
+        print("MMMAAARRRKKKK: \(Item)")
+        
+        
+        print("MMMAAARRRKKKK: \(items)")
         
     }
     
@@ -48,8 +66,9 @@ class ShoppingCartController: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(handleBack))
 
         
-        
+
     }
+    
     
     func setupViews() {
         

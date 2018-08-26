@@ -12,7 +12,6 @@ class HomeController: UICollectionViewController{
   
     let cellID = "cellID"
     
-
     var tshirts: [Tshirt]!
        
     

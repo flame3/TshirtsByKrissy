@@ -41,6 +41,17 @@ extension UpcomingViewController: UICollectionViewDelegateFlowLayout {
         let layout = UICollectionViewFlowLayout()
         let upComingDetail = DetailVC(collectionViewLayout: layout)
         let upcomingImage = UIImage(named: tshirts[indexPath.row].mainImage)
+        let upComingTitle = tshirts[indexPath.row].title
+        let upcomingPrice = tshirts[indexPath.row].price
+//        let upcomingFirstImage = UIImage(named: tshirts[indexPath.row].firstColorImage)
+//        let upcomingSecondImage = UIImage(named: tshirts[indexPath.row].secondColorImage)
+//        let upcomingThirdImage = UIImage(named: tshirts[indexPath.row].thirdColorImage)
+        
+//        upComingDetail.blueShirtImageButton.setImage(upcomingFirstImage, for: .normal)
+//        upComingDetail.yellowImageButton.setImage(upcomingSecondImage, for: .normal)
+//        upComingDetail.greenTshirtImageButton.setImage(upcomingThirdImage, for: .normal)
+        upComingDetail.priceLabel.text = upcomingPrice
+        upComingDetail.titleLabel.text = upComingTitle
         upComingDetail.topImageView.image = upcomingImage
         navigationController?.pushViewController(upComingDetail, animated: true)
         

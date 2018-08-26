@@ -9,6 +9,7 @@
 import UIKit
 
 class DetailVC: UICollectionViewController {
+    var item: CartItem?
     
     lazy var backgroundImageView: UIImageView = {
         let image = UIImageView()
@@ -21,7 +22,7 @@ class DetailVC: UICollectionViewController {
     lazy var glassView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+        view.backgroundColor = UIColor.white.withAlphaComponent(0.3)
         return view
     }()
     
@@ -30,8 +31,8 @@ class DetailVC: UICollectionViewController {
         iv.image = UIImage(named: "placeholder")
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.contentMode = .scaleAspectFill
-        iv.layer.masksToBounds = true
         iv.clipsToBounds = true
+        iv.layer.masksToBounds = true
         return iv
     }()
     
@@ -50,13 +51,17 @@ class DetailVC: UICollectionViewController {
     let priceLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
-        label.text = "$50"
-        label.font = UIFont.boldSystemFont(ofSize: 14)
+        label.text = "50"
+        label.font = UIFont.boldSystemFont(ofSize: 18)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 
-    
+    lazy var differentColorContainerView: UIView = {
+        let container = UIView()
+        container.translatesAutoresizingMaskIntoConstraints = false
+        return container
+    }()
     
     lazy var blueShirtImageButton: UIButton = {
         let btn = UIButton(type: .system)
@@ -82,12 +87,6 @@ class DetailVC: UICollectionViewController {
         return btn
     }()
     
-    lazy var differentColorContainerView: UIView = {
-        let container = UIView()
-        container.translatesAutoresizingMaskIntoConstraints = false
-        return container
-    }()
-    
     lazy var selectorsStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [sizePickerView, quantityPickerView])
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -100,21 +99,26 @@ class DetailVC: UICollectionViewController {
     
     lazy var sizePickerView: UIPickerView = {
         let picker = UIPickerView()
-        picker.backgroundColor = .orange
+        picker.backgroundColor = .white
+        picker.layer.borderColor = UIColor.lightGray.cgColor
+        picker.layer.borderWidth = 1
        return picker
     }()
     
     lazy var quantityPickerView: UIPickerView = {
         let picker = UIPickerView()
-        picker.backgroundColor = .brown
+        picker.backgroundColor = .white
+        picker.layer.borderColor = UIColor.lightGray.cgColor
+        picker.layer.borderWidth = 1
         return picker
     }()
     
     lazy var addToBagButton: UIButton = {
        let btn = UIButton(type: .system)
         btn.setTitle("Add to Bag", for: .normal)
-        btn.addTarget(self, action: #selector(handleAddToBag), for: .touchUpInside)
-        btn.layer.borderColor = UIColor.white.cgColor
+        btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        btn.addTarget(self, action: #selector(gotoShoppingBag), for: .touchUpInside)
+        btn.layer.borderColor = UIColor.lightGray.cgColor
         btn.layer.borderWidth = 3
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
@@ -201,7 +205,7 @@ class DetailVC: UICollectionViewController {
         priceLabel.rightAnchor.constraint(equalTo: topImageView.rightAnchor, constant: 15).isActive = true
         priceLabel.bottomAnchor.constraint(equalTo: topImageView.bottomAnchor, constant: 5).isActive = true
         priceLabel.topAnchor.constraint(equalTo: topImageView.bottomAnchor, constant: 10).isActive = true
-        priceLabel.heightAnchor.constraint(equalToConstant: topImageView.frame.height/16).isActive = true
+        priceLabel.heightAnchor.constraint(equalToConstant: view.frame.height/16).isActive = true
         priceLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
         
         // setup Different Color Image Container
@@ -209,7 +213,7 @@ class DetailVC: UICollectionViewController {
         differentColorContainerView.leftAnchor.constraint(equalTo: topImageView.leftAnchor, constant: 15).isActive = true
         //differentColorIVStackView.bottomAnchor.constraint(equalTo: topImageView.leftAnchor).isActive = true
         differentColorContainerView.rightAnchor.constraint(equalTo: topImageView.rightAnchor, constant: -15).isActive = true
-        differentColorContainerView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        differentColorContainerView.heightAnchor.constraint(equalToConstant: 85).isActive = true
         
         // setup blue image Button
         blueShirtImageButton.leftAnchor.constraint(equalTo: differentColorContainerView.leftAnchor).isActive = true
@@ -235,17 +239,17 @@ class DetailVC: UICollectionViewController {
         
         // setup Selectors StackView
         selectorsStackView.topAnchor.constraint(equalTo: differentColorContainerView.bottomAnchor, constant: 15).isActive = true
-        selectorsStackView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        selectorsStackView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        selectorsStackView.leftAnchor.constraint(equalTo: differentColorContainerView.leftAnchor).isActive = true
+        selectorsStackView.rightAnchor.constraint(equalTo: differentColorContainerView.rightAnchor).isActive = true
         selectorsStackView.heightAnchor.constraint(equalToConstant: 150).isActive = true
         
         
         
         // setup add to bag button
-        addToBagButton.topAnchor.constraint(equalTo: selectorsStackView.bottomAnchor, constant: 25).isActive = true
-        addToBagButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
-        addToBagButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 10).isActive = true
-        addToBagButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
+        addToBagButton.topAnchor.constraint(equalTo: selectorsStackView.bottomAnchor, constant: 15).isActive = true
+        addToBagButton.leftAnchor.constraint(equalTo: differentColorContainerView.leftAnchor, constant: 20).isActive = true
+        addToBagButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -15).isActive = true
+        addToBagButton.rightAnchor.constraint(equalTo: differentColorContainerView.rightAnchor, constant: -20).isActive = true
         addToBagButton.heightAnchor.constraint(equalToConstant: 75).isActive = true
         
     }

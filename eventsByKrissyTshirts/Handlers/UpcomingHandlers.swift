@@ -11,10 +11,12 @@ import UIKit
 
 extension UpcomingViewController{
     @objc public func showShoppingBag(){
+        Alert.showBasic(title: "Not available", msg: "Nothing to see here just yet", vc: self)
+
         //let shopVC = ShoppingCartController()
-        let vc = UINavigationController(rootViewController: ShoppingCartController())
-        present(vc, animated: true, completion: nil)
-        
+//        let vc = UINavigationController(rootViewController: ShoppingCartController())
+//        present(vc, animated: true, completion: nil)
+//
 //        if shopVC.cart.count == 0 {
 //            let alert = UIAlertController(title: "Shopping Cart is Empty", message: "Please add some items to your shopping cart", preferredStyle: UIAlertControllerStyle.actionSheet)
 //            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CartItems {
+class CartItem: NSObject {
     var tshirtImage: UIImage
     var tshirtTitle: String
     var tshirtPrice: String
@@ -19,6 +19,5 @@ class CartItems {
         self.tshirtTitle = title
         self.tshirtPrice = price
     }
-
     
 }
