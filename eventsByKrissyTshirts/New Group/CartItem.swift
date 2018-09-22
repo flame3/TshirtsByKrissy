@@ -20,4 +20,26 @@ class CartItem: NSObject {
         self.tshirtPrice = price
     }
     
+//    static func getAllItems() -> [CartItem]{
+//        var Items: [CartItem] = []
+//        for items in Cart {
+//            let item = CartItem(image: items["Img"]!, title: items["Title"]!, price: items["Price"]!)
+//            Items.append(item)
+//        }
+//        return Items
+//    }
+//    
+    static let Cart = [
+        
+        ["Img": "placeholder","Title": "Be an Anomoly", "Price": "50"],
+        ["Img": "placeholder","Title": "Whatever  ", "Price": "50"],
+        ["Img": "placeholder","Title": "Never be Tamed", "Price": "50"],
+        ["Img": "placeholder","Title": "Tomato or Tomoto  ", "Price": "50"],
+        ["Img": "placeholder","Title": "Dont take any L's    ", "Price": "50"],
+        ["Img": "placeholder","Title": "Dont fit into the Box  ", "Price": "50"],
+        ["Img": "placeholder","Title": "No place like L.A.", "Price": "50"]
+        ]
+    
+    
+    
 }

@@ -12,7 +12,7 @@ extension ShoppingCartController: UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         
-                return 11
+                return Item.count
         
         
     }
@@ -22,9 +22,9 @@ extension ShoppingCartController: UICollectionViewDelegate, UICollectionViewData
         
         
         
-//        cell.tshirtImageIV.image =
-//        cell.titleTextLabel.text = ""
-//        cell.priceTextLabel.text = ""
+        cell.tshirtImageIV.image = Item[indexPath.row].tshirtImage
+        cell.titleTextLabel.text = Item[indexPath.row].tshirtTitle
+        cell.priceTextLabel.text = Item[indexPath.row].tshirtPrice
 
    
         

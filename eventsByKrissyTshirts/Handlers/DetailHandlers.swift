@@ -31,34 +31,35 @@ extension DetailVC{
         }
     
     
-    @objc func handleAddToBag(){
-        //var items = [Tshirt] ()
+    @objc func handleAddToBag()->[CartItem]{
+
+        let shopVC = ShoppingCartController()
+            let image1 = topImageView.image
+            let priceL = priceLabel.text
+            let titleL = titleLabel.text
+
+
+
         
+        var cart:[CartItem] = []
+            
+            
+            let newitem = CartItem(image: image1!, title: titleL!, price: priceL!)
         
-//        let shopCell = ShoppingCartCell()
-//        let shopVC = ShoppingCartController()
-//
-//        didSet{
-//
-//            let image = topImageView.image
-//            let price = priceLabel.text
-//            let detailTitleLabel = titleLabel.text
-//
-//        }
-//
-//
-//        shopCell.priceTextLabel = priceLabel
-//        .sizeTextLabel = sizePickerView
-////       shopVC.ShoppingCartItems += [Tshirt(mainImage: "jesus", firstColor: "placeholder", SecondColor: "placeholder", ThirdColor: "placeholder",  title: shopVC.titleTextLabel.text!, price: shopVC.priceTextLabel.text!)]
+            cart.append(newitem)
+            shopVC.Item += cart
+            present(shopVC, animated: true, completion: nil)
+            return cart
+        }
+    
+//      shopVC.ShoppingCartItems += [Tshirt(mainImage: "jesus", firstColor: "placeholder", SecondColor: "placeholder", ThirdColor: "placeholder",  title: shopVC.titleTextLabel.text!, price: shopVC.priceTextLabel.text!)]
 //        shopVC.cart.append(CartItems(image: image!, title: price!, price: detailTitleLabel!))
+//
         
         
         
-        
-        
-        //print(shopVC.cart.count)
-        
-    }
+    
+    
     
 //    @objc func completePayment(size: Int, quantity: Int){
 //

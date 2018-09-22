@@ -37,28 +37,11 @@ class ShoppingCartController: UIViewController {
         //print("MARKKKKK!!!!!!! image: \(Cart?.tshirtImage),title: \(Cart?.tshirtTitle),price; \(Cart?.tshirtPrice)")
         
         
-        addItemsToArray()
+        
         
     }
     
-    func addItemsToArray() {
-        
-        let detailCell = DetailVC()
-        let img = detailCell.topImageView.image
-        let title = detailCell.titleLabel.text
-        let price = detailCell.priceLabel.text
-        let items = CartItem(image: img!, title: title!, price: price!)
-        Item.append(items)
-        
-        
     
-        
-        print("MMMAAARRRKKKK: \(Item)")
-        
-        
-        print("MMMAAARRRKKKK: \(items)")
-        
-    }
     
     func setupNavBar(){
         

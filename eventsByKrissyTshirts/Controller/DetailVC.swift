@@ -117,7 +117,7 @@ class DetailVC: UICollectionViewController {
        let btn = UIButton(type: .system)
         btn.setTitle("Add to Bag", for: .normal)
         btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        btn.addTarget(self, action: #selector(gotoShoppingBag), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(handleAddToBag), for: .touchUpInside)
         btn.layer.borderColor = UIColor.lightGray.cgColor
         btn.layer.borderWidth = 3
         btn.translatesAutoresizingMaskIntoConstraints = false
