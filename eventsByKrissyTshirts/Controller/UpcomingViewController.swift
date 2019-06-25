@@ -32,6 +32,7 @@ class UpcomingViewController: UICollectionViewController  {
     navigationItem.title = "Upcoming Tshirts"
     navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "shopping-bag"), style: .plain, target: self, action: #selector(showShoppingBag))
     navigationItem.leftBarButtonItem?.backgroundImage(for: .normal, style: .plain, barMetrics: .default)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "list"), style: .plain, target: self, action: #selector(showProfile))
     
     }
    

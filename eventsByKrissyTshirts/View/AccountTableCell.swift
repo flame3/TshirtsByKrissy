@@ -23,7 +23,7 @@ class  AccountTableCell: UITableViewCell {
         return arrow
     }()
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         layer.cornerRadius = 0.5
         layer.shadowRadius = 2

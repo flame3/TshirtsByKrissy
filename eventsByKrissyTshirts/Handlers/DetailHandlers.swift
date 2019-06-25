@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreData
+
 
 extension DetailVC{
     
@@ -30,6 +32,12 @@ extension DetailVC{
             
         }
     
+    @objc func showProfie(){
+        let profileVC = ProfileVC()
+        present(profileVC, animated: true, completion: nil)
+
+    }
+    
     
     @objc func handleAddToBag()->[CartItem]{
 
@@ -48,7 +56,8 @@ extension DetailVC{
         
             cart.append(newitem)
             shopVC.Item += cart
-            present(shopVC, animated: true, completion: nil)
+            let shopNav = UINavigationController(rootViewController: shopVC)
+            present(shopNav, animated: true, completion: nil)
             return cart
         }
     

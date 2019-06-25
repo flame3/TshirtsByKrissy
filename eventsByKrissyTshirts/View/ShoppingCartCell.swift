@@ -12,8 +12,7 @@ class ShoppingCartCell: UICollectionViewCell {
     
     lazy var tshirtImageIV: UIImageView = {
         let iv = UIImageView()
-        iv.backgroundColor = .blue
-        iv.contentMode = .scaleAspectFill
+        iv.contentMode = .scaleAspectFit
         iv.translatesAutoresizingMaskIntoConstraints = false
         return iv
     }()
@@ -21,7 +20,7 @@ class ShoppingCartCell: UICollectionViewCell {
     lazy var titleTextLabel: UILabel = {
         let lbl = UILabel()
         lbl.textAlignment = .center
-        lbl.textColor = .white
+        lbl.textColor = .gray
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.font = UIFont.boldSystemFont(ofSize: 20)
         lbl.text = "Just having Fun"
@@ -31,9 +30,9 @@ class ShoppingCartCell: UICollectionViewCell {
     lazy var sizeTextLabel: UILabel = {
         let lbl = UILabel()
         lbl.textAlignment = .center
-        lbl.textColor = .white
+        lbl.textColor = .gray
         lbl.translatesAutoresizingMaskIntoConstraints = false
-        lbl.font = UIFont.boldSystemFont(ofSize: 16)
+        lbl.font = UIFont.boldSystemFont(ofSize: 18)
         lbl.text = "XL"
         return lbl
     }()
@@ -41,9 +40,9 @@ class ShoppingCartCell: UICollectionViewCell {
     lazy var priceTextLabel: UILabel = {
         let lbl = UILabel()
         lbl.textAlignment = .center
-        lbl.textColor = .white
+        lbl.textColor = .gray
         lbl.translatesAutoresizingMaskIntoConstraints = false
-        lbl.font = UIFont.boldSystemFont(ofSize: 18)
+        lbl.font = UIFont.boldSystemFont(ofSize: 20)
         lbl.text = "$50"
         return lbl
     }()
@@ -62,23 +61,10 @@ class ShoppingCartCell: UICollectionViewCell {
         return view
     }()
     
-    let deleteButton: UIButton = {
-        let btn = UIButton(frame: CGRect(x: 50, y: 50, width: 50, height: 50))
-        btn.setImage(#imageLiteral(resourceName: "cancel"), for: .normal)
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        return btn
-    }()
     
-    let editButton: UIButton = {
-        let btn = UIButton()
-        btn.setTitle("Edit", for: .normal)
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        return btn
-    }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .green
         
         self.addSubview(tshirtImageIV)
         self.addSubview(titleTextLabel)
@@ -86,8 +72,7 @@ class ShoppingCartCell: UICollectionViewCell {
         self.addSubview(priceTextLabel)
         self.addSubview(dividerView)
         self.addSubview(containerView)
-        self.addSubview(editButton)
-        self.addSubview(deleteButton)
+        
         
         
         
@@ -109,14 +94,14 @@ class ShoppingCartCell: UICollectionViewCell {
             titleTextLabel.widthAnchor.constraint(equalToConstant: 200),
             
             sizeTextLabel.centerYAnchor.constraint(equalTo: tshirtImageIV.centerYAnchor, constant: 10),
-            sizeTextLabel.centerXAnchor.constraint(equalTo: titleTextLabel.centerXAnchor, constant: -20),
-            sizeTextLabel.heightAnchor.constraint(equalToConstant: 100),
-            sizeTextLabel.widthAnchor.constraint(equalToConstant: 200),
+            sizeTextLabel.centerXAnchor.constraint(equalTo: titleTextLabel.centerXAnchor, constant: -40),
+            sizeTextLabel.heightAnchor.constraint(equalToConstant: 200),
+            sizeTextLabel.widthAnchor.constraint(equalToConstant: 300),
             
             priceTextLabel.centerYAnchor.constraint(equalTo: tshirtImageIV.centerYAnchor, constant: 10),
-            priceTextLabel.centerXAnchor.constraint(equalTo: titleTextLabel.centerXAnchor, constant: 20),
-            priceTextLabel.heightAnchor.constraint(equalToConstant: 100),
-            priceTextLabel.widthAnchor.constraint(equalToConstant: 200),
+            priceTextLabel.centerXAnchor.constraint(equalTo: titleTextLabel.centerXAnchor, constant: 30),
+            priceTextLabel.heightAnchor.constraint(equalToConstant: 200),
+            priceTextLabel.widthAnchor.constraint(equalToConstant: 300),
             
             dividerView.topAnchor.constraint(equalTo: tshirtImageIV.bottomAnchor, constant: 20),
             dividerView.centerXAnchor.constraint(equalTo: centerXAnchor),
@@ -126,17 +111,9 @@ class ShoppingCartCell: UICollectionViewCell {
             containerView.topAnchor.constraint(equalTo: dividerView.bottomAnchor),
             containerView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
             containerView.leftAnchor.constraint(equalTo: leftAnchor),
-            containerView.rightAnchor.constraint(equalTo: rightAnchor),
+            containerView.rightAnchor.constraint(equalTo: rightAnchor)
             
-            deleteButton.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
-            deleteButton.leftAnchor.constraint(equalTo: leftAnchor, constant: 25),
-            deleteButton.heightAnchor.constraint(equalToConstant: 50),
-            deleteButton.widthAnchor.constraint(equalToConstant: 50),
-            
-            editButton.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
-            editButton.rightAnchor.constraint(equalTo: rightAnchor),
-            editButton.heightAnchor.constraint(equalToConstant: 100),
-            editButton.widthAnchor.constraint(equalToConstant: 100),
+    
             
             
             

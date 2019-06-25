@@ -36,6 +36,7 @@ class DetailVC: UICollectionViewController {
         return iv
     }()
     
+    
     let titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
@@ -51,6 +52,7 @@ class DetailVC: UICollectionViewController {
     let priceLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
+        label.textAlignment = .center
         label.text = "50"
         label.font = UIFont.boldSystemFont(ofSize: 18)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -67,7 +69,7 @@ class DetailVC: UICollectionViewController {
         let btn = UIButton(type: .system)
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.addTarget(self, action: #selector(changeToBlueImage), for: .touchUpInside)
-        btn.backgroundColor = .blue
+        btn.backgroundColor = .clear
         return btn
     }()
     
@@ -75,7 +77,7 @@ class DetailVC: UICollectionViewController {
         let btn = UIButton(type: .system)
         btn.addTarget(self, action: #selector(changeToYellowImage), for: .touchUpInside)
         btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.backgroundColor = .yellow
+        btn.backgroundColor = .clear
         return btn
     }()
     
@@ -83,7 +85,7 @@ class DetailVC: UICollectionViewController {
         let btn = UIButton(type: .system)
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.addTarget(self, action: #selector(changeToGreenImage(_sender:)), for: .touchUpInside)
-        btn.backgroundColor = .green
+        btn.backgroundColor = .clear
         return btn
     }()
     
@@ -134,7 +136,7 @@ class DetailVC: UICollectionViewController {
     var selectedSize: String?
     var selectedQuantity: Int?
     
-    
+    var Profile: ProfileVC!
     
     
     
@@ -148,9 +150,15 @@ class DetailVC: UICollectionViewController {
         quantityPickerView.dataSource = self
         quantityPickerView.delegate = self
 
+        setupNavBar()
         setupElements()
         setupViews()
         print(123)
+    }
+    func setupNavBar(){
+        // navbar needs to be set up
+        
+        
     }
     
     
@@ -202,11 +210,12 @@ class DetailVC: UICollectionViewController {
         titleLabel.heightAnchor.constraint(equalToConstant: 250).isActive = true
         
         // setup Price Label
-        priceLabel.rightAnchor.constraint(equalTo: topImageView.rightAnchor, constant: 15).isActive = true
+        priceLabel.rightAnchor.constraint(equalTo: topImageView.rightAnchor, constant: -2).isActive = true
         priceLabel.bottomAnchor.constraint(equalTo: topImageView.bottomAnchor, constant: 5).isActive = true
-        priceLabel.topAnchor.constraint(equalTo: topImageView.bottomAnchor, constant: 10).isActive = true
+        priceLabel.topAnchor.constraint(equalTo: topImageView.bottomAnchor, constant: -50).isActive = true
         priceLabel.heightAnchor.constraint(equalToConstant: view.frame.height/16).isActive = true
-        priceLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        priceLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        
         
         // setup Different Color Image Container
         differentColorContainerView.topAnchor.constraint(equalTo: topImageView.bottomAnchor, constant: 10).isActive = true

@@ -22,6 +22,7 @@
 		595300C220ED24EE0057C29C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595300C020ED24EE0057C29C /* LaunchScreen.storyboard */; };
 		595300CD20ED24EF0057C29C /* eventsByKrissyTshirtsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595300CC20ED24EF0057C29C /* eventsByKrissyTshirtsTests.swift */; };
 		595300D820ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595300D720ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift */; };
+		5982F89F2284C30A004D5E9E /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5982F89E2284C30A004D5E9E /* ProfileVC.swift */; };
 		599B738A211F7C2F00636E42 /* HomeCollectionView++Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599B7389211F7C2F00636E42 /* HomeCollectionView++Ext.swift */; };
 		59A6C487211E522300B73909 /* ShoppingCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A6C486211E522300B73909 /* ShoppingCartController.swift */; };
 		59A6C489211E5E6200B73909 /* HomeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A6C488211E5E6200B73909 /* HomeHandler.swift */; };
@@ -38,6 +39,7 @@
 		59B9FFD520F2CF08000FF8AC /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B9FFD420F2CF08000FF8AC /* PaymentVC.swift */; };
 		59C46EC820EF982200B8DDE2 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C46EC720EF982200B8DDE2 /* HomeCell.swift */; };
 		59D5CB29212A3FD6002D5126 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D5CB28212A3FD6002D5126 /* CartItem.swift */; };
+		59EC2428215FBFA3005F8D66 /* CartItem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59EC2426215FBFA3005F8D66 /* CartItem.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,7 @@
 		595300D320ED24EF0057C29C /* eventsByKrissyTshirtsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eventsByKrissyTshirtsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		595300D720ED24EF0057C29C /* eventsByKrissyTshirtsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventsByKrissyTshirtsUITests.swift; sourceTree = "<group>"; };
 		595300D920ED24EF0057C29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5982F89E2284C30A004D5E9E /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		599B7389211F7C2F00636E42 /* HomeCollectionView++Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeCollectionView++Ext.swift"; sourceTree = "<group>"; };
 		59A6C486211E522300B73909 /* ShoppingCartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartController.swift; sourceTree = "<group>"; };
 		59A6C488211E5E6200B73909 /* HomeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHandler.swift; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		59B9FFD420F2CF08000FF8AC /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
 		59C46EC720EF982200B8DDE2 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		59D5CB28212A3FD6002D5126 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		59EC2427215FBFA3005F8D66 /* CartItem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CartItem.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +220,7 @@
 		59D0F8D720EF9792003BD21F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				59EC2426215FBFA3005F8D66 /* CartItem.xcdatamodeld */,
 				593D8DE02117A89200A18B70 /* Tshirt.swift */,
 				59D5CB28212A3FD6002D5126 /* CartItem.swift */,
 			);
@@ -227,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				59B9FFC620F284EC000FF8AC /* UpcomingViewController.swift */,
+				5982F89E2284C30A004D5E9E /* ProfileVC.swift */,
 				59B9FFD020F2CE78000FF8AC /* DetailVC.swift */,
 				595300B920ED24E80057C29C /* HomeController.swift */,
 				59B9FFC820F28511000FF8AC /* AccountVC.swift */,
@@ -306,13 +312,16 @@
 				TargetAttributes = {
 					595300B320ED24E80057C29C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					595300C720ED24EF0057C29C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 595300B320ED24E80057C29C;
 					};
 					595300D220ED24EF0057C29C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 595300B320ED24E80057C29C;
 					};
 				};
@@ -381,9 +390,11 @@
 				59B9FFCB20F28A30000FF8AC /* HomeTabBarController.swift in Sources */,
 				59B9FFCF20F29B75000FF8AC /* ShoppingCartCell.swift in Sources */,
 				594544D02113A52600BB8208 /* AccountTableView++Ext.swift in Sources */,
+				59EC2428215FBFA3005F8D66 /* CartItem.xcdatamodeld in Sources */,
 				59C46EC820EF982200B8DDE2 /* HomeCell.swift in Sources */,
 				593D8DE12117A89200A18B70 /* Tshirt.swift in Sources */,
 				59A6C48F211E69A300B73909 /* ShoppingCollection++Ext.swift in Sources */,
+				5982F89F2284C30A004D5E9E /* ProfileVC.swift in Sources */,
 				59B9FFCD20F29B24000FF8AC /* UpComingCell.swift in Sources */,
 				5912BED021163A0D00C4433B /* AboutHandlers.swift in Sources */,
 				59A6C48D211E655900B73909 /* ShoppingBagHandlers.swift in Sources */,
@@ -568,7 +579,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GAC33BRLLD;
+				DEVELOPMENT_TEAM = UEXBA2T64X;
 				INFOPLIST_FILE = eventsByKrissyTshirts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -576,7 +587,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nicksdev.eventsByKrissyTshirts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -586,7 +597,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GAC33BRLLD;
+				DEVELOPMENT_TEAM = UEXBA2T64X;
 				INFOPLIST_FILE = eventsByKrissyTshirts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -594,7 +605,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nicksdev.eventsByKrissyTshirts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -614,7 +625,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nicksdev.eventsByKrissyTshirtsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eventsByKrissyTshirts.app/eventsByKrissyTshirts";
 			};
@@ -635,7 +646,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nicksdev.eventsByKrissyTshirtsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eventsByKrissyTshirts.app/eventsByKrissyTshirts";
 			};
@@ -655,7 +666,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nicksdev.eventsByKrissyTshirtsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = eventsByKrissyTshirts;
 			};
@@ -675,7 +686,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nicksdev.eventsByKrissyTshirtsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = eventsByKrissyTshirts;
 			};
@@ -721,6 +732,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		59EC2426215FBFA3005F8D66 /* CartItem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				59EC2427215FBFA3005F8D66 /* CartItem.xcdatamodel */,
+			);
+			currentVersion = 59EC2427215FBFA3005F8D66 /* CartItem.xcdatamodel */;
+			path = CartItem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 595300AC20ED24E80057C29C /* Project object */;
 }

@@ -46,24 +46,24 @@ class Tshirt: NSObject {
     
     static let upcomingTshirtAttributes = [
         
-        ["MainImage": "jesus", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Just Live", "Price": "50"],
-        ["MainImage": "peace", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Peace, Love, Balance", "Price": "50"],
-        ["MainImage": "getBack", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Not too Close", "Price": "50"],
-        ["MainImage": "cool", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Like An A.C.", "Price": "50"],
-        ["MainImage": "jean", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Gotta be Fresh", "Price": "50"],
-        ["MainImage": "jeff", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Just Squint", "Price": "50"],
-        ["MainImage": "lolipop", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Sweet like Candy", "Price": "50"],
+        ["MainImage": "jesus", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Just Live", "Price": "$19.99"],
+        ["MainImage": "peace", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Peace, Love, Balance", "Price": "$25"],
+        ["MainImage": "getBack", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Not too Close", "Price": "$24.99"],
+        ["MainImage": "cool", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Like An A.C.", "Price": "$24.99"],
+        ["MainImage": "jean", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Gotta be Fresh", "Price": "$19.99"],
+        ["MainImage": "jeff", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Just Squint", "Price": "$21.99"],
+        ["MainImage": "lolipop", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Sweet like Candy", "Price": "$15.99"],
     ]
     
     static let homeTshirtAttributes = [
     
-        ["MainImage": "white-shirt", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder", "Title": "Be an Anomoly", "Price": "50"],
-        ["MainImage": "whatever", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Whatever  ", "Price": "50"],
-        ["MainImage": "stay-wild", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Never be Tamed", "Price": "50"],
-        ["MainImage": "tomato", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Tomato or Tomoto  ", "Price": "50"],
-        ["MainImage": "undefeated", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Dont take any L's    ", "Price": "50"],
-        ["MainImage": "outcast", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Dont fit into the Box  ", "Price": "50"],
-        ["MainImage": "la", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "No place like L.A.", "Price": "50"],
+        ["MainImage": "white-shirt", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder", "Title": "Be an Anomoly", "Price": "$19.99"],
+        ["MainImage": "whatever", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Whatever  ", "Price": "$24.99"],
+        ["MainImage": "stay-wild", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Never be Tamed", "Price": "$21.99"],
+        ["MainImage": "tomato", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Tomato or Tomoto  ", "Price": "$19.99"],
+        ["MainImage": "undefeated", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Dont take any L's    ", "Price": "$24.99"],
+        ["MainImage": "outcast", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "Dont fit into the Box  ", "Price": "$24.99"],
+        ["MainImage": "la", "FirstColor": "placeholder", "SecondColor": "placeholder", "ThirdColor": "placeholder","Title": "No place like L.A.", "Price": "$19.99"],
     ]
 
 }

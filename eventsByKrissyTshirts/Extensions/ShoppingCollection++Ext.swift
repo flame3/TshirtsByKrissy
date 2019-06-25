@@ -25,12 +25,8 @@ extension ShoppingCartController: UICollectionViewDelegate, UICollectionViewData
         cell.tshirtImageIV.image = Item[indexPath.row].tshirtImage
         cell.titleTextLabel.text = Item[indexPath.row].tshirtTitle
         cell.priceTextLabel.text = Item[indexPath.row].tshirtPrice
-
-   
         
-        cell.layer.cornerRadius = 15
-        cell.layer.shadowRadius = 2
-        cell.layer.shadowColor = UIColor.gray.cgColor
+        
         return cell
     }
     

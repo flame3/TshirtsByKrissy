@@ -50,6 +50,7 @@ class UpComingCell: UICollectionViewCell {
     }()
     let PriceLabel: UILabel = {
         let label = UILabel()
+        label.textAlignment = .center
         label.textColor = .white
         label.text = "$50"
         label.font = UIFont.boldSystemFont(ofSize: 18)
@@ -87,11 +88,11 @@ class UpComingCell: UICollectionViewCell {
         TitleLabel.heightAnchor.constraint(equalToConstant: 75).isActive = true
         TitleLabel.widthAnchor.constraint(equalToConstant: frame.width).isActive = true
         
-        PriceLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 15).isActive = true
+        PriceLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -2).isActive = true
         PriceLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 5).isActive = true
-        PriceLabel.topAnchor.constraint(equalTo: TshirtImageView.bottomAnchor, constant: 10).isActive = true
+        PriceLabel.topAnchor.constraint(equalTo: TshirtImageView.bottomAnchor, constant: -50).isActive = true
         PriceLabel.heightAnchor.constraint(equalToConstant: frame.height/16).isActive = true
-        PriceLabel.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        PriceLabel.widthAnchor.constraint(equalToConstant: 100).isActive = true
         
         
         
